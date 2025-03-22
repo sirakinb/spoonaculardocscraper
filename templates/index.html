@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Documentation Scraper</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>API Documentation Scraper</h1>
+            <p class="subtitle">Paste any API documentation URL to get a clean, organized view of its endpoints</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <div class="url-input-container">
+                    <input type="url" id="apiUrl" placeholder="https://api.example.com/docs" class="url-input">
+                    <button id="scrapeButton" class="scrape-button">
+                        <span class="button-text">Scrape Documentation</span>
+                        <div class="loader"></div>
+                    </button>
+                </div>
+            </div>
+
+            <div class="results-section" style="display: none;">
+                <div class="results-header">
+                    <h2>API Endpoints</h2>
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Search endpoints..." class="search-input">
+                    </div>
+                </div>
+
+                <div class="endpoints-grid">
+                    <!-- Endpoints will be dynamically inserted here -->
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html> 

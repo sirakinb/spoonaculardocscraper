@@ -1,34 +1,69 @@
-# Spoonacular API Documentation Scraper
+# API Documentation Scraper
 
-This script scrapes the Spoonacular API documentation from https://spoonacular.com/food-api/docs and saves it in a structured JSON format.
+A modern, user-friendly web interface for scraping and displaying API documentation. This tool allows you to paste any API documentation URL and get a clean, organized view of its endpoints.
+
+## Features
+
+- Modern dark theme interface
+- Real-time endpoint search
+- Beautiful card-based layout
+- Parameter and code example display
+- Responsive design
+- Easy to use interface
 
 ## Setup
 
-1. Install the required dependencies:
+1. Clone the repository:
+```bash
+git clone https://github.com/sirakinb/spoonaculardocscraper.git
+cd spoonaculardocscraper
+```
+
+2. Create and activate a virtual environment:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-2. Run the scraper:
+4. Run the application:
 ```bash
-python spoonacular_scraper.py
+python app.py
 ```
 
-## Output
+5. Open your browser and navigate to `http://localhost:5000`
 
-The scraper will create a `spoonacular_docs` directory containing JSON files for each documentation page. Each JSON file contains:
-- Title of the page
-- Description
-- Endpoint details (parameters, responses, etc.)
+## Usage
 
-## Features
+1. Enter the URL of the API documentation page in the input field
+2. Click "Scrape Documentation"
+3. Wait for the scraper to process the documentation
+4. Use the search bar to filter endpoints
+5. Click on any endpoint card to view detailed information
 
-- Automatically follows all documentation links
-- Saves content in a structured JSON format
-- Respects rate limiting (1 second delay between requests)
-- Handles errors gracefully
-- Avoids duplicate page scraping
+## Project Structure
 
-## Note
+```
+spoonaculardocscraper/
+├── app.py              # Main Flask application
+├── requirements.txt    # Python dependencies
+├── static/
+│   ├── css/
+│   │   └── style.css  # Styles for the web interface
+│   └── js/
+│       └── main.js    # Frontend JavaScript
+└── templates/
+    └── index.html     # Main HTML template
+```
 
-Please be mindful of Spoonacular's terms of service and rate limits when using this scraper. 
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
