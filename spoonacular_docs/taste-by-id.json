@@ -1,0 +1,28 @@
+{
+  "title": "Taste by ID",
+  "group": "Recipes",
+  "description": "Get a recipe's taste. The tastes supported are sweet, salty, sour, bitter, savory, and fatty. These tastes are between 0 and 100 while the spiciness value is in scoville on an open scale of 0 and above.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/tasteWidget.json",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "69095",
+      "Description": "The recipe id."
+    },
+    "normalize": {
+      "Name": "normalize",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Normalize to the strongest taste."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"sweetness\": 28.79,\n    \"saltiness\": 26.74,\n    \"sourness\": 6.22,\n    \"bitterness\": 12.38,\n    \"savoriness\": 11.8,\n    \"fattiness\": 100,\n    \"spiciness\": 0\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

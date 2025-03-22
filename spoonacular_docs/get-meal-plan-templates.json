@@ -1,0 +1,32 @@
+{
+  "title": "Get Meal Plan Templates",
+  "group": "Meal Plans",
+  "description": "Get meal plan templates from user or public ones.",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/{username}/templates",
+  "endpoint_method": "GET",
+  "parameters": {
+    "username": {
+      "Name": "username",
+      "Type": "string",
+      "Example": "dsky",
+      "Description": "The username."
+    },
+    "hash": {
+      "Name": "hash",
+      "Type": "string",
+      "Example": "4b5v4398573406",
+      "Description": "The private hash for the username."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"templates\": [\n        {\n            \"id\": 37,\n            \"name\": \"Busy Work Week\"\n        },\n        {\n            \"id\": 480,\n            \"name\": \"Keto Meal Plan\"\n        },\n        {\n            \"id\": 120,\n            \"name\": \"Not-So-Strict Paleo Meal Plan\"\n        },\n        {\n            \"id\": 451,\n            \"name\": \"Week 1 Meal Plan\"\n        },\n        {\n            \"id\": 581,\n            \"name\": \"Whole30 Meal Plan\"\n        }\n    ]\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"templates\": [\n        {\n            \"id\": 37,\n            \"name\": \"Busy Work Week\"\n        },\n        {\n            \"id\": 480,\n            \"name\": \"Keto Meal Plan\"\n        },\n        {\n            \"id\": 120,\n            \"name\": \"Not-So-Strict Paleo Meal Plan\"\n        },\n        {\n            \"id\": 451,\n            \"name\": \"Week 1 Meal Plan\"\n        },\n        {\n            \"id\": 581,\n            \"name\": \"Whole30 Meal Plan\"\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

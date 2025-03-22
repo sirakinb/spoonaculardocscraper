@@ -1,0 +1,28 @@
+{
+  "title": "Classify Grocery Product",
+  "group": "Products",
+  "description": "This endpoint allows you to match a packaged food to a basic category, e.g. a specific brand of milk to the category milk.",
+  "endpoint_url": "https://api.spoonacular.com/food/products/classify",
+  "endpoint_method": "POST",
+  "parameters": {
+    "(post body)": {
+      "Name": "(post body)",
+      "Type": "string",
+      "Example": "{\n                \"title\": \"Kroger Vitamin A & D Reduced Fat 2% Milk\",\n                \"upc\": \"\",\n                \"plu_code\": \"\"\n              }",
+      "Description": "A json object containing the product title."
+    },
+    "locale": {
+      "Name": "locale",
+      "Type": "string",
+      "Example": "en_US",
+      "Description": "The display name of the returned category, supported is en_US (for American English) and en_GB (for British English)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"cleanTitle\": \"Kroger Vitamin A & D Reduced Fat 2% Milk\",\n    \"image\": \"https://img.spoonacular.com/ingredients_100x100/milk.png\",\n    \"category\": \"2 percent milk\",\n    \"breadcrumbs\": [\n        \"2 percent milk\",\n        \"milk\",\n        \"drink\",\n        \"ingredient\"\n    ],\n    \"usdaCode\": 1174\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 0.5 points. Learn more about quotas."
+}

@@ -1,0 +1,40 @@
+{
+  "title": "Generate Meal Plan",
+  "group": "Meal Plans",
+  "description": "Generate a meal plan with three meals per day (breakfast, lunch, and dinner).",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/generate",
+  "endpoint_method": "GET",
+  "parameters": {
+    "timeFrame": {
+      "Name": "timeFrame",
+      "Type": "string",
+      "Example": "day",
+      "Description": "Either for one \"day\" or an entire \"week\"."
+    },
+    "targetCalories": {
+      "Name": "targetCalories",
+      "Type": "number",
+      "Example": "2000",
+      "Description": "What is the caloric target for one day? The meal plan generator will try to get as close as possible to that goal."
+    },
+    "diet": {
+      "Name": "diet",
+      "Type": "string",
+      "Example": "vegetarian",
+      "Description": "Enter a diet that the meal plan has to adhere to. See a full list of supported diets."
+    },
+    "exclude": {
+      "Name": "exclude",
+      "Type": "string",
+      "Example": "shellfish, olives",
+      "Description": "A comma-separated list of allergens or ingredients that must be excluded."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"meals\": [\n        {\n            \"id\": 655219,\n            \"title\": \"Peanut Butter And Chocolate Oatmeal\",\n            \"imageType\": \"jpg\",\n            \"readyInMinutes\": 45,\n            \"servings\": 1,\n            \"sourceUrl\": \"https://spoonacular.com/recipes/peanut-butter-and-chocolate-oatmeal-655219\"\n        },\n        {\n            \"id\": 649931,\n            \"title\": \"Lentil Salad With Vegetables\",\n            \"imageType\": \"jpg\",\n            \"readyInMinutes\": 45,\n            \"servings\": 4,\n            \"sourceUrl\": \"https://spoonacular.com/recipes/lentil-salad-with-vegetables-649931\"\n        },\n        {\n            \"id\": 632854,\n            \"title\": \"Asian Noodles\",\n            \"imageType\": \"jpg\",\n            \"readyInMinutes\": 45,\n            \"servings\": 4,\n            \"sourceUrl\": \"https://spoonacular.com/recipes/asian-noodles-632854\"\n        }\n    ],\n    \"nutrients\": {\n        \"calories\": 1735.81,\n        \"carbohydrates\": 235.17,\n        \"fat\": 69.22,\n        \"protein\": 55.43\n    }\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

@@ -1,0 +1,35 @@
+{
+  "title": "Recipe Nutrition Label Image",
+  "group": "Recipes",
+  "description": "Get a recipe's nutrition label as an image.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/nutritionLabel.png",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "641166",
+      "Description": "The recipe id."
+    },
+    "showOptionalNutrients": {
+      "Name": "showOptionalNutrients",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show optional nutrients."
+    },
+    "showZeroValues": {
+      "Name": "showZeroValues",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show zero values."
+    },
+    "showIngredients": {
+      "Name": "showIngredients",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show a list of ingredients."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 3 points. Learn more about quotas."
+}

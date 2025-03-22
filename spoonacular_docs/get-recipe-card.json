@@ -1,0 +1,46 @@
+{
+  "title": "Get Recipe Card",
+  "group": "Widgets",
+  "description": "Generate a recipe card for a recipe.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/card",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "4632",
+      "Description": "The recipe id."
+    },
+    "mask": {
+      "Name": "mask",
+      "Type": "string",
+      "Example": "ellipseMask",
+      "Description": "The mask to put over the recipe image (\"ellipseMask\", \"diamondMask\", \"starMask\", \"heartMask\", \"potMask\", \"fishMask\")."
+    },
+    "backgroundImage": {
+      "Name": "backgroundImage",
+      "Type": "string",
+      "Example": "background1",
+      "Description": "The background image (\"none\",\"background1\", or \"background2\")."
+    },
+    "backgroundColor": {
+      "Name": "backgroundColor",
+      "Type": "string",
+      "Example": "ffffff",
+      "Description": "The background color for the recipe card as a hex-string."
+    },
+    "fontColor": {
+      "Name": "fontColor",
+      "Type": "string",
+      "Example": "333333",
+      "Description": "The font color for the recipe card as a hex-string."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"url\": \"https://spoonacular.com/url-to-generated-recipe-card.jpg\",\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

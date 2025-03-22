@@ -1,0 +1,10 @@
+{
+  "title": "Working with the Meal Planner",
+  "group": "Meal Plans",
+  "description": "The spoonacular API allows you to interact with the spoonacular meal planner. Check out the endpoints under \"Meal Planning\" on the left to see what you can do.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

@@ -1,0 +1,26 @@
+{
+  "title": "Connect User",
+  "group": "Meal Plans",
+  "description": "In order to call user-specific endpoints, you need to connect your app's users to spoonacular users.",
+  "endpoint_url": "https://api.spoonacular.com/users/connect",
+  "endpoint_method": "POST",
+  "parameters": {
+    "(post body)": {
+      "Name": "(post body)",
+      "Type": "string",
+      "Example": "{\n                \"username\": \"cool user\",\n              }",
+      "Description": "A json body."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"username\": \"your user's name\",\n    \"firstName\": \"your user's first name\",\n    \"lastName\": \"your user's last name\",\n    \"email\": \"your user's email\"\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"username\": \"api_123_user\",\n    \"spoonacularPassword\": \"meadwith31grapejam\",\n    \"hash\": \"q572587bq2405724q05\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

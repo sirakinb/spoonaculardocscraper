@@ -1,0 +1,76 @@
+{
+  "title": "Search Food Videos",
+  "group": "Misc",
+  "description": "Find recipe and other food related videos. This endpoint searches YouTube for relevant recipe or other food-related videos. Please be sure to read the YouTube Terms of Service before embedding videos into your site or app.",
+  "endpoint_url": "https://api.spoonacular.com/food/videos/search",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "chicken soup",
+      "Description": "The search query."
+    },
+    "type": {
+      "Name": "type",
+      "Type": "string",
+      "Example": "main course",
+      "Description": "The type of the recipes. See a full list of supported meal types."
+    },
+    "cuisine": {
+      "Name": "cuisine",
+      "Type": "string",
+      "Example": "italian",
+      "Description": "The cuisine(s) of the recipes. One or more, comma separated. See a full list of supported cuisines."
+    },
+    "diet": {
+      "Name": "diet",
+      "Type": "string",
+      "Example": "vegetarian",
+      "Description": "The diet for which the recipes must be suitable. See a full list of supported diets."
+    },
+    "includeIngredients": {
+      "Name": "includeIngredients",
+      "Type": "string",
+      "Example": "tomato,cheese",
+      "Description": "A comma-separated list of ingredients that the recipes should contain."
+    },
+    "excludeIngredients": {
+      "Name": "excludeIngredients",
+      "Type": "string",
+      "Example": "eggs",
+      "Description": "A comma-separated list of ingredients or ingredient types that the recipes must not contain."
+    },
+    "minLength": {
+      "Name": "minLength",
+      "Type": "number",
+      "Example": "0",
+      "Description": "Minimum video length in seconds."
+    },
+    "maxLength": {
+      "Name": "maxLength",
+      "Type": "number",
+      "Example": "999",
+      "Description": "Maximum video length in seconds."
+    },
+    "offset": {
+      "Name": "offset",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The number of results to skip (between 0 and 900)."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of results to return (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"videos\": [\n        {\n            \"title\": \"8 One-Pot Pastas\",\n            \"length\": 370,\n            \"rating\": 0.985984219269103,\n            \"shortTitle\": \"8 One-Pot Pastas\",\n            \"thumbnail\": \"https://i.ytimg.com/vi/YTZGPCCB2FU/mqdefault.jpg\",\n            \"views\": 550467,\n            \"youTubeId\": \"YTZGPCCB2FU\"\n        },\n        {\n            \"title\": \"Macaroni salad - pasta salad recipes - healthy recipe channel - quick tasty recipe - cooking channel\",\n            \"length\": 333,\n            \"rating\": 1.0,\n            \"shortTitle\": \"Macaroni salad\",\n            \"thumbnail\": \"https://i.ytimg.com/vi/81bn4p8H3Kg/mqdefault.jpg\",\n            \"views\": 307,\n            \"youTubeId\": \"81bn4p8H3Kg\"\n        }\n    ],\n    \"totalResults\": 172\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points  per video returned. \n    Learn more about quotas."
+}

@@ -1,0 +1,28 @@
+{
+  "title": "Wine Pairing",
+  "group": "Wine",
+  "description": "Find a wine that goes well with a food. Food can be a dish name (\"steak\"), an ingredient name (\"salmon\"), or a cuisine (\"italian\").",
+  "endpoint_url": "https://api.spoonacular.com/food/wine/pairing",
+  "endpoint_method": "GET",
+  "parameters": {
+    "food": {
+      "Name": "food",
+      "Type": "string",
+      "Example": "steak",
+      "Description": "The food to get a pairing for. This can be a dish (\"steak\"), an ingredient (\"salmon\"), or a cuisine (\"italian\")."
+    },
+    "maxPrice": {
+      "Name": "maxPrice",
+      "Type": "number",
+      "Example": "50",
+      "Description": "The maximum price for the specific wine recommendation in USD."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"pairedWines\": [\n        \"merlot\",\n        \"cabernet sauvignon\",\n        \"pinot noir\"\n    ],\n    \"pairingText\": \"Merlot, Cabernet Sauvignon, and Pinot Noir are my top picks for Steak. After all, beef and red wine are a classic combination. Generally, leaner steaks go well with light or medium-bodied reds, such as pinot noir or merlot, while fattier steaks can handle a bold red, such as cabernet sauvingnon. The Sterling Vineyards Merlot with a 5 out of 5 star rating seems like a good match. It costs about 29 dollars per bottle.\",\n    \"productMatches\": [\n        {\n            \"id\": 428278,\n            \"title\": \"Sterling Vineyards Merlot\",\n            \"averageRating\": 1.0,\n            \"description\": null,\n            \"imageUrl\": \"https://img.spoonacular.com/products/428278-312x231.jpg\",\n            \"link\": \"https://www.amazon.com/2014-Sterling-Vineyards-Valley-Merlot/dp/B071FP8NPG?tag=spoonacular-20\",\n            \"price\": \"$28.99\",\n            \"ratingCount\": 1.0,\n            \"score\": 0.75\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

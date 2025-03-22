@@ -1,0 +1,17 @@
+{
+  "title": "Menu Item Nutrition by ID Image",
+  "group": "Widgets",
+  "description": "Visualize a menu item's nutritional information as HTML including CSS.",
+  "endpoint_url": "https://api.spoonacular.com/food/menuItems/{id}/nutritionWidget.png",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "424571",
+      "Description": "The menu item id."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 3 points. Learn more about quotas."
+}

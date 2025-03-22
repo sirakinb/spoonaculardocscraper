@@ -1,0 +1,10 @@
+{
+  "title": "Intolerances",
+  "group": "Misc",
+  "description": "Every API endpoint asking for a intolerances parameter can be fed with any of these intolerances.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

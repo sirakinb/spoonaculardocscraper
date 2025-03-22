@@ -1,0 +1,22 @@
+{
+  "title": "Analyze a Recipe Search Query",
+  "group": "Recipes",
+  "description": "Parse a recipe search query to find out its intention.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/queries/analyze",
+  "endpoint_method": "GET",
+  "parameters": {
+    "q": {
+      "Name": "q",
+      "Type": "string",
+      "Example": "salmon with fusilli and no nuts",
+      "Description": "The recipe search query."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"dishes\": [\n        {\n            \"image\": \"https://img.spoonacular.com/ingredients_100x100/salmon.png\",\n            \"name\": \"salmon\"\n        }\n    ],\n    \"ingredients\": [\n        {\n            \"image\": \"fusilli.jpg\",\n            \"include\": true,\n            \"name\": \"fusilli\"\n        },\n        {\n            \"image\": \"nuts-mixed.jpg\",\n            \"include\": false,\n            \"name\": \"nuts mixed\"\n        }\n    ],\n    \"cuisines\": [],\n    \"modifiers\": []\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

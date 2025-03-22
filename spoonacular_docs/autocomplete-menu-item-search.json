@@ -1,0 +1,28 @@
+{
+  "title": "Autocomplete Menu Item Search",
+  "group": "Menu Items",
+  "description": "Generate suggestions for menu items based on a (partial) query. The matches will be found by looking in the title only.",
+  "endpoint_url": "https://api.spoonacular.com/food/menuItems/suggest",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "chicke",
+      "Description": "The (partial) search query."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of results to return (between 1 and 25)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"results\": [\n        {\n            \"id\": 253419,\n            \"title\": \"pei wei asian diner thai chicken lettuce wraps\"\n        },\n        {\n            \"id\": 380722,\n            \"title\": \"camille's chicken caesar salad includes 2 oz. caesar dressing\"\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 0.1 points. Learn more about quotas."
+}

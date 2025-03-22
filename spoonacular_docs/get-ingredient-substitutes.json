@@ -1,0 +1,22 @@
+{
+  "title": "Get Ingredient Substitutes",
+  "group": "Ingredients",
+  "description": "Search for substitutes for a given ingredient.",
+  "endpoint_url": "https://api.spoonacular.com/food/ingredients/substitutes",
+  "endpoint_method": "GET",
+  "parameters": {
+    "ingredientName": {
+      "Name": "ingredientName",
+      "Type": "string",
+      "Example": "butter",
+      "Description": "The name of the ingredient you want to replace."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"ingredient\": \"butter\",\n    \"substitutes\": [\n        \"1 cup = 7/8 cup shortening and 1/2 tsp salt\",\n        \"1 cup = 7/8 cup vegetable oil + 1/2 tsp salt\",\n        \"1/2 cup = 1/4 cup buttermilk + 1/4 cup unsweetened applesauce\",\n        \"1 cup = 1 cup margarine\"\n    ],\n    \"message\": \"Found 4 substitutes for the ingredient.\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

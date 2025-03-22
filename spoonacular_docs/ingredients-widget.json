@@ -1,0 +1,58 @@
+{
+  "title": "Ingredients Widget",
+  "group": "Widgets",
+  "description": "Visualize ingredients of a recipe. You can play around with that endpoint!",
+  "endpoint_url": "https://api.spoonacular.com/recipes/visualizeIngredients",
+  "endpoint_method": "POST",
+  "parameters": {
+    "ingredientList": {
+      "Name": "ingredientList",
+      "Type": "string",
+      "Example": "3 oz flour",
+      "Description": "The ingredient list of the recipe, one ingredient per line."
+    },
+    "servings": {
+      "Name": "servings",
+      "Type": "number",
+      "Example": "2",
+      "Description": "The number of servings."
+    },
+    "measure": {
+      "Name": "measure",
+      "Type": "string",
+      "Example": "metric",
+      "Description": "The original system of measurement, either \"metric\" or \"us\"."
+    },
+    "view": {
+      "Name": "view",
+      "Type": "string",
+      "Example": "grid",
+      "Description": "How to visualize the ingredients, either \"grid\" or \"list\"."
+    },
+    "defaultCss": {
+      "Name": "defaultCss",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether the default CSS should be added to the response."
+    },
+    "showBacklink": {
+      "Name": "showBacklink",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether to show a backlink to spoonacular. If set false, this call counts against your quota."
+    },
+    "language": {
+      "Name": "language",
+      "Type": "string",
+      "Example": "en",
+      "Description": "The input language, either \"en\" or \"de\"."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "/* HTML response */"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point unless \"showBacklink\" is true, then 0 points. Learn more about quotas."
+}

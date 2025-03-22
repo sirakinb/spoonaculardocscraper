@@ -1,0 +1,46 @@
+{
+  "title": "Product Nutrition Label Widget",
+  "group": "Recipes",
+  "description": "Get a product's nutrition label as an HTML widget.",
+  "endpoint_url": "https://api.spoonacular.com/food/products/{id}/nutritionLabel",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "22347",
+      "Description": "The product id."
+    },
+    "defaultCss": {
+      "Name": "defaultCss",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether the default CSS should be added to the response."
+    },
+    "showOptionalNutrients": {
+      "Name": "showOptionalNutrients",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show optional nutrients."
+    },
+    "showZeroValues": {
+      "Name": "showZeroValues",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show zero values."
+    },
+    "showIngredients": {
+      "Name": "showIngredients",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show a list of ingredients."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "/* HTML response */"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

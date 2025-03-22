@@ -1,0 +1,28 @@
+{
+  "title": "Search Similar Recipes",
+  "group": "Recipes",
+  "description": "Find recipes which are similar to the given one.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/similar",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "715538",
+      "Description": "The id of the source recipe for which similar recipes should be found."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "1",
+      "Description": "The number of random recipes to be returned (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "[\n    {\n        \"id\": 209128,\n        \"title\": \"Dinner Tonight: Grilled Romesco-Style Pork\",\n        \"imageType\": \"jpg\",\n        \"readyInMinutes\": 45,\n        \"servings\": 4,\n        \"sourceUrl\": \"http://www.seriouseats.com/recipes/2008/07/grilled-romesco-style-pork-salad-recipe.html\"\n    },\n    {\n        \"id\": 31868,\n        \"title\": \"Dinner Tonight: Chickpea Bruschetta\",\n        \"imageType\": \"jpg\",\n        \"readyInMinutes\": 45,\n        \"servings\": 2,\n        \"sourceUrl\": \"http://www.seriouseats.com/recipes/2009/06/dinner-tonight-chickpea-bruschetta-babbo-nyc-recipe.html\"\n    }\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points  per recipe returned. \n    Learn more about quotas."
+}

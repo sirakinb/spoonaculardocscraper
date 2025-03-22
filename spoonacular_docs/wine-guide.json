@@ -1,0 +1,15 @@
+{
+  "title": "Wine Guide",
+  "group": "Guides",
+  "description": "Here you can see the classification spoonacular uses for wines. If you are missing a wine please let us know!",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [
+    {
+      "language": "text",
+      "code": "wine\n - white_wine\n   - dry_white_wine\n     - assyrtiko\n     - pinot_blanc\n     - cortese\n     - roussanne\n     - moschofilero\n     - muscadet\n     - viognier\n     - verdicchio\n     - greco\n     - marsanne\n     - white_burgundy\n     - chardonnay\n     - gruener_veltliner\n     - white_rioja\n     - frascati\n     - gavi\n     - l_acadie_blanc\n     - trebbiano\n     - sauvignon_blanc\n     - catarratto\n     - albarino\n     - arneis\n     - verdejo\n     - vermentino\n     - soave\n     - pinot_grigio\n     - dry_riesling\n     - torrontes\n   - mueller_thurgau\n   - grechetto\n   - gewurztraminer\n   - chenin_blanc\n   - white_bordeaux\n   - semillon\n   - riesling\n   - sauternes\n   - sylvaner\n   - lillet_blanc\n - red_wine\n   - dry_red_wine\n     - petite_sirah\n     - zweigelt\n     - baco_noir\n     - bonarda\n     - cabernet_franc\n     - bairrada\n     - barbera_wine\n     - primitivo\n     - pinot_noir\n     - nebbiolo\n     - dolcetto\n     - tannat\n     - negroamaro\n     - red_burgundy\n     - corvina\n     - rioja\n     - cotes_du_rhone\n     - grenache\n     - malbec\n     - zinfandel\n     - sangiovese\n     - carignan\n     - carmenere\n     - cesanese\n     - cabernet_sauvignon\n     - aglianico\n     - tempranillo\n     - shiraz\n     - mourvedre\n     - merlot\n     - nero_d_avola\n   - bordeaux\n   - marsala\n   - port\n   - gamay\n   - dornfelder\n   - concord_wine\n   - sparkling_red_wine\n   - pinotage\n   - agiorgitiko\n - dessert_wine\n   - pedro_ximenez\n   - moscato\n   - late_harvest\n   - ice_wine\n   - white_port\n   - lambrusco_dolce\n   - madeira\n   - banyuls\n   - vin_santo\n   - port\n - rose_wine\n   - sparkling_rose\n - sparkling_wine\n   - cava\n   - cremant\n   - champagne\n   - prosecco\n   - spumante\n   - sparkling_rose\n - sherry\n   - cream_sherry\n   - dry_sherry\n - vermouth\n   - dry_vermouth\n - fruit_wine\n - mead"
+    }
+  ],
+  "quota": ""
+}

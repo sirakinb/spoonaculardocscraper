@@ -1,0 +1,15 @@
+{
+  "title": "Random Food Joke",
+  "group": "Misc",
+  "description": "Get a random joke that is related to food. Caution: this is an endpoint for adults!",
+  "endpoint_url": "https://api.spoonacular.com/food/jokes/random",
+  "endpoint_method": "GET",
+  "parameters": {},
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"text\": \"Any salad can be a Caesar salad if you stab it enough.\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

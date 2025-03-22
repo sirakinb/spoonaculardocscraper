@@ -1,0 +1,40 @@
+{
+  "title": "Equipment Widget",
+  "group": "Widgets",
+  "description": "Visualize the equipment used to make a recipe. You can play around with that endpoint!",
+  "endpoint_url": "https://api.spoonacular.com/recipes/visualizeEquipment",
+  "endpoint_method": "POST",
+  "parameters": {
+    "instructions": {
+      "Name": "instructions",
+      "Type": "string",
+      "Example": "Preheat oven. Cut cucumber with a knife and put in a blender.",
+      "Description": "The recipe's instructions."
+    },
+    "view": {
+      "Name": "view",
+      "Type": "string",
+      "Example": "grid",
+      "Description": "How to visualize the equipment, either \"grid\" or \"list\"."
+    },
+    "defaultCss": {
+      "Name": "defaultCss",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether the default CSS should be added to the response."
+    },
+    "showBacklink": {
+      "Name": "showBacklink",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether to show a backlink to spoonacular. If set false, this call counts against your quota."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "/* HTML response */"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point unless \"showBacklink\" is true, then 0 points. Learn more about quotas."
+}

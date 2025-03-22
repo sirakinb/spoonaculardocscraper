@@ -1,0 +1,29 @@
+{
+  "title": "Delete from Shopping List",
+  "group": "Meal Plans",
+  "description": "Delete an item from the current shopping list of the user.",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/{username}/shopping-list/items/{id}",
+  "endpoint_method": "DELETE",
+  "parameters": {
+    "username": {
+      "Name": "username",
+      "Type": "string",
+      "Example": "dsky",
+      "Description": "The username."
+    },
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "15678",
+      "Description": "The shopping list item id."
+    },
+    "hash": {
+      "Name": "hash",
+      "Type": "string",
+      "Example": "4b5v4398573406",
+      "Description": "The private hash for the username."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

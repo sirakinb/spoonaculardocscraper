@@ -1,0 +1,52 @@
+{
+  "title": "Price Breakdown Widget",
+  "group": "Widgets",
+  "description": "Visualize the price breakdown of a recipe. You can play around with that endpoint!",
+  "endpoint_url": "https://api.spoonacular.com/recipes/visualizePriceEstimator",
+  "endpoint_method": "POST",
+  "parameters": {
+    "ingredientList": {
+      "Name": "ingredientList",
+      "Type": "string",
+      "Example": "3 oz flour",
+      "Description": "The ingredient list of the recipe, one ingredient per line."
+    },
+    "servings": {
+      "Name": "servings",
+      "Type": "number",
+      "Example": "2",
+      "Description": "The number of servings."
+    },
+    "mode": {
+      "Name": "mode",
+      "Type": "number",
+      "Example": "1",
+      "Description": "The mode in which the widget should be delivered. 1 = separate views (compact), 2 = all in one view (full)."
+    },
+    "defaultCss": {
+      "Name": "defaultCss",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether the default CSS should be added to the response."
+    },
+    "showBacklink": {
+      "Name": "showBacklink",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether to show a backlink to spoonacular. If set false, this call counts against your quota."
+    },
+    "language": {
+      "Name": "language",
+      "Type": "string",
+      "Example": "en",
+      "Description": "The input language, either \"en\" or \"de\"."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "/* HTML response */"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point unless \"showBacklink\" is true, then 0 points. Learn more about quotas."
+}

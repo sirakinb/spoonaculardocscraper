@@ -1,0 +1,46 @@
+{
+  "title": "Search Custom Foods",
+  "group": "Meal Plans",
+  "description": "Search custom foods in a user's account.",
+  "endpoint_url": "https://api.spoonacular.com/food/customFoods/search",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "brat",
+      "Description": "The search query."
+    },
+    "username": {
+      "Name": "username",
+      "Type": "string",
+      "Example": "dsky",
+      "Description": "The username."
+    },
+    "hash": {
+      "Name": "hash",
+      "Type": "string",
+      "Example": "4b5v4398573406",
+      "Description": "The private hash for the username."
+    },
+    "offset": {
+      "Name": "offset",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The number of results to skip (between 0 and 990)."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of expected results (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"customFoods\": [\n        {\n            \"id\": 15,\n            \"title\": \"Max Cafe Curry Bratwurst\",\n            \"servings\": 1,\n            \"imageUrl\": \"https://img.spoonacular.com/ingredients_100x100/bratwurst.jpg\",\n            \"price\": 6.9\n        }\n    ],\n    \"type\": \"customFood\",\n    \"offset\": 0,\n    \"number\": 10\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points  per custom food returned. \n    Learn more about quotas."
+}

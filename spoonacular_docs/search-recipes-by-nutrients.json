@@ -1,0 +1,466 @@
+{
+  "title": "Search Recipes by Nutrients",
+  "group": "Recipes",
+  "description": "Find a set of recipes that adhere to the given nutritional limits. You may set limits for macronutrients (calories, protein, fat, and carbohydrate) and/or many micronutrients.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/findByNutrients",
+  "endpoint_method": "GET",
+  "parameters": {
+    "minCarbs": {
+      "Name": "minCarbs",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum amount of carbohydrates in grams the recipe must have per serving."
+    },
+    "maxCarbs": {
+      "Name": "maxCarbs",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of carbohydrates in grams the recipe can have per serving."
+    },
+    "minProtein": {
+      "Name": "minProtein",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum amount of protein in grams the recipe must have per serving."
+    },
+    "maxProtein": {
+      "Name": "maxProtein",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of protein in grams the recipe can have per serving."
+    },
+    "minCalories": {
+      "Name": "minCalories",
+      "Type": "number",
+      "Example": "50",
+      "Description": "The minimum amount of calories the recipe must have per serving."
+    },
+    "maxCalories": {
+      "Name": "maxCalories",
+      "Type": "number",
+      "Example": "800",
+      "Description": "The maximum amount of calories the recipe can have per serving."
+    },
+    "minFat": {
+      "Name": "minFat",
+      "Type": "number",
+      "Example": "1",
+      "Description": "The minimum amount of fat in grams the recipe must have per serving."
+    },
+    "maxFat": {
+      "Name": "maxFat",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of fat in grams the recipe can have per serving."
+    },
+    "minAlcohol": {
+      "Name": "minAlcohol",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of alcohol in grams the recipe must have per serving."
+    },
+    "maxAlcohol": {
+      "Name": "maxAlcohol",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of alcohol in grams the recipe can have per serving."
+    },
+    "minCaffeine": {
+      "Name": "minCaffeine",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of caffeine in milligrams the recipe must have per serving."
+    },
+    "maxCaffeine": {
+      "Name": "maxCaffeine",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of caffeine in milligrams the recipe can have per serving."
+    },
+    "minCopper": {
+      "Name": "minCopper",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of copper in milligrams the recipe must have per serving."
+    },
+    "maxCopper": {
+      "Name": "maxCopper",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of copper in milligrams the recipe can have per serving."
+    },
+    "minCalcium": {
+      "Name": "minCalcium",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of calcium in milligrams the recipe must have per serving."
+    },
+    "maxCalcium": {
+      "Name": "maxCalcium",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of calcium in milligrams the recipe can have per serving."
+    },
+    "minCholine": {
+      "Name": "minCholine",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of choline in milligrams the recipe must have per serving."
+    },
+    "maxCholine": {
+      "Name": "maxCholine",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of choline in milligrams the recipe can have per serving."
+    },
+    "minCholesterol": {
+      "Name": "minCholesterol",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of cholesterol in milligrams the recipe must have per serving."
+    },
+    "maxCholesterol": {
+      "Name": "maxCholesterol",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of cholesterol in milligrams the recipe can have per serving."
+    },
+    "minFluoride": {
+      "Name": "minFluoride",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of fluoride in milligrams the recipe must have per serving."
+    },
+    "maxFluoride": {
+      "Name": "maxFluoride",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of fluoride in milligrams the recipe can have per serving."
+    },
+    "minSaturatedFat": {
+      "Name": "minSaturatedFat",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of saturated fat in grams the recipe must have per serving."
+    },
+    "maxSaturatedFat": {
+      "Name": "maxSaturatedFat",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of saturated fat in grams the recipe can have per serving."
+    },
+    "minVitaminA": {
+      "Name": "minVitaminA",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin A in IU the recipe must have per serving."
+    },
+    "maxVitaminA": {
+      "Name": "maxVitaminA",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin A in IU the recipe can have per serving."
+    },
+    "minVitaminC": {
+      "Name": "minVitaminC",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin C in milligrams the recipe must have per serving."
+    },
+    "maxVitaminC": {
+      "Name": "maxVitaminC",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin C in milligrams the recipe can have per serving."
+    },
+    "minVitaminD": {
+      "Name": "minVitaminD",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin D in micrograms the recipe must have per serving."
+    },
+    "maxVitaminD": {
+      "Name": "maxVitaminD",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin D in micrograms the recipe can have per serving."
+    },
+    "minVitaminE": {
+      "Name": "minVitaminE",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin E in milligrams the recipe must have per serving."
+    },
+    "maxVitaminE": {
+      "Name": "maxVitaminE",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin E in milligrams the recipe can have per serving."
+    },
+    "minVitaminK": {
+      "Name": "minVitaminK",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin K in micrograms the recipe must have per serving."
+    },
+    "maxVitaminK": {
+      "Name": "maxVitaminK",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin K in micrograms the recipe can have per serving."
+    },
+    "minVitaminB1": {
+      "Name": "minVitaminB1",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin B1 in milligrams the recipe must have per serving."
+    },
+    "maxVitaminB1": {
+      "Name": "maxVitaminB1",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin B1 in milligrams the recipe can have per serving."
+    },
+    "minVitaminB2": {
+      "Name": "minVitaminB2",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin B2 in milligrams the recipe must have per serving."
+    },
+    "maxVitaminB2": {
+      "Name": "maxVitaminB2",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin B2 in milligrams the recipe can have per serving."
+    },
+    "minVitaminB5": {
+      "Name": "minVitaminB5",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin B5 in milligrams the recipe must have per serving."
+    },
+    "maxVitaminB5": {
+      "Name": "maxVitaminB5",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin B5 in milligrams the recipe can have per serving."
+    },
+    "minVitaminB3": {
+      "Name": "minVitaminB3",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin B3 in milligrams the recipe must have per serving."
+    },
+    "maxVitaminB3": {
+      "Name": "maxVitaminB3",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin B3 in milligrams the recipe can have per serving."
+    },
+    "minVitaminB6": {
+      "Name": "minVitaminB6",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin B6 in milligrams the recipe must have per serving."
+    },
+    "maxVitaminB6": {
+      "Name": "maxVitaminB6",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin B6 in milligrams the recipe can have per serving."
+    },
+    "minVitaminB12": {
+      "Name": "minVitaminB12",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of Vitamin B12 in micrograms the recipe must have per serving."
+    },
+    "maxVitaminB12": {
+      "Name": "maxVitaminB12",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of Vitamin B12 in micrograms the recipe can have per serving."
+    },
+    "minFiber": {
+      "Name": "minFiber",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of fiber in grams the recipe must have per serving."
+    },
+    "maxFiber": {
+      "Name": "maxFiber",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of fiber in grams the recipe can have per serving."
+    },
+    "minFolate": {
+      "Name": "minFolate",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of folate in micrograms the recipe must have per serving."
+    },
+    "maxFolate": {
+      "Name": "maxFolate",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of folate in micrograms the recipe can have per serving."
+    },
+    "minFolicAcid": {
+      "Name": "minFolicAcid",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of folic acid in micrograms the recipe must have per serving."
+    },
+    "maxFolicAcid": {
+      "Name": "maxFolicAcid",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of folic acid in micrograms the recipe can have per serving."
+    },
+    "minIodine": {
+      "Name": "minIodine",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of iodine in micrograms the recipe must have per serving."
+    },
+    "maxIodine": {
+      "Name": "maxIodine",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of iodine in micrograms the recipe can have per serving."
+    },
+    "minIron": {
+      "Name": "minIron",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of iron in milligrams the recipe must have per serving."
+    },
+    "maxIron": {
+      "Name": "maxIron",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of iron in milligrams the recipe can have per serving."
+    },
+    "minMagnesium": {
+      "Name": "minMagnesium",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of magnesium in milligrams the recipe must have per serving."
+    },
+    "maxMagnesium": {
+      "Name": "maxMagnesium",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of magnesium in milligrams the recipe can have per serving."
+    },
+    "minManganese": {
+      "Name": "minManganese",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of manganese in milligrams the recipe must have per serving."
+    },
+    "maxManganese": {
+      "Name": "maxManganese",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of manganese in milligrams the recipe can have per serving."
+    },
+    "minPhosphorus": {
+      "Name": "minPhosphorus",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of phosphorus in milligrams the recipe must have per serving."
+    },
+    "maxPhosphorus": {
+      "Name": "maxPhosphorus",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of phosphorus in milligrams the recipe can have per serving."
+    },
+    "minPotassium": {
+      "Name": "minPotassium",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of potassium in milligrams the recipe must have per serving."
+    },
+    "maxPotassium": {
+      "Name": "maxPotassium",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of potassium in milligrams the recipe can have per serving."
+    },
+    "minSelenium": {
+      "Name": "minSelenium",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of selenium in micrograms the recipe must have per serving."
+    },
+    "maxSelenium": {
+      "Name": "maxSelenium",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of selenium in micrograms the recipe can have per serving."
+    },
+    "minSodium": {
+      "Name": "minSodium",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of sodium in milligrams the recipe must have per serving."
+    },
+    "maxSodium": {
+      "Name": "maxSodium",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of sodium in milligrams the recipe can have per serving."
+    },
+    "minSugar": {
+      "Name": "minSugar",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of sugar in grams the recipe must have per serving."
+    },
+    "maxSugar": {
+      "Name": "maxSugar",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of sugar in grams the recipe can have per serving."
+    },
+    "minZinc": {
+      "Name": "minZinc",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The minimum amount of zinc in milligrams the recipe must have per serving."
+    },
+    "maxZinc": {
+      "Name": "maxZinc",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of zinc in milligrams the recipe can have per serving."
+    },
+    "offset": {
+      "Name": "offset",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The number of results to skip (between 0 and 900)."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of expected results (between 1 and 100)."
+    },
+    "random": {
+      "Name": "random",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "If true, every request will give you a random set of recipes within the requested limits."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "[\n    {\n        \"calories\": 210,\n        \"carbs\": \"43g\",\n        \"fat\": \"3g\",\n        \"id\": 90629,\n        \"image\": \"https://img.spoonacular.com/recipes/90629-312x231.jpg\",\n        \"imageType\": \"jpg\",\n        \"protein\": \"1g\",\n        \"title\": \"Baked Apples in White Wine\"\n    },\n    {\n        \"calories\": 226,\n        \"carbs\": \"33g\",\n        \"fat\": \"10g\",\n        \"id\": 284420,\n        \"image\": \"https://img.spoonacular.com/recipes/284420-312x231.jpg\",\n        \"imageType\": \"jpg\",\n        \"protein\": \"2g\",\n        \"title\": \"Chocolate Silk Pie with Marshmallow Meringue\"\n    }\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points  per recipe returned. \n    Learn more about quotas."
+}

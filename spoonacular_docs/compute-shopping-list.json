@@ -1,0 +1,19 @@
+{
+  "title": "Compute Shopping List",
+  "group": "Meal Plans",
+  "description": "Compute a shopping list from a set of simple foods. This endpoint does not require usernames.",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/shopping-list/compute",
+  "endpoint_method": "POST",
+  "parameters": {},
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"items\": [\n        \"4 lbs tomatoes\",\n        \"10 tomatoes\",\n        \"20 Tablespoons Olive Oil\",\n        \"6 tbsp Olive Oil\"\n    ]\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"aisles\": [\n        {\n            \"aisle\": \"Pantry Items\",\n            \"items\": [\n                {\n                    \"name\": \"olive oil\",\n                    \"measures\": {\n                        \"metric\": {\n                            \"amount\": 364.0,\n                            \"unit\": \"ml\"\n                        },\n                        \"us\": {\n                            \"amount\": 12.4,\n                            \"unit\": \"fl oz\"\n                        }\n                    },\n                    \"pantryItem\": true,\n                    \"aisle\": \"Pantry Items\",\n                    \"cost\": 333.55,\n                    \"ingredientId\": 4053\n                }\n            ]\n        },\n        {\n            \"aisle\": \"Produce\",\n            \"items\": [\n                {\n                    \"name\": \"tomatoes\",\n                    \"measures\": {\n                        \"metric\": {\n                            \"amount\": 3044.4,\n                            \"unit\": \"g\"\n                        },\n                        \"us\": {\n                            \"amount\": 6.8,\n                            \"unit\": \"lb\"\n                        }\n                    },\n                    \"pantryItem\": false,\n                    \"aisle\": \"Produce\",\n                    \"cost\": 532.21,\n                    \"ingredientId\": 11529\n                }\n            ]\n        }\n    ],\n    \"cost\": 1326.62\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

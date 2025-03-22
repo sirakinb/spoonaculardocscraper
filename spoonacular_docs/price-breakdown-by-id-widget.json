@@ -1,0 +1,34 @@
+{
+  "title": "Price Breakdown by ID Widget",
+  "group": "Widgets",
+  "description": "Visualize a recipe's price breakdown.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/priceBreakdownWidget",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "1082038",
+      "Description": "The recipe id."
+    },
+    "defaultCss": {
+      "Name": "defaultCss",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether the default CSS should be added to the response."
+    },
+    "mode": {
+      "Name": "mode",
+      "Type": "number",
+      "Example": "1",
+      "Description": "The mode in which the widget should be delivered. 1 = separate views (compact), 2 = all in one view (full)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "/* HTML response */"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

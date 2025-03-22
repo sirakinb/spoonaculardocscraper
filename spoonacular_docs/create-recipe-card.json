@@ -1,0 +1,94 @@
+{
+  "title": "Create Recipe Card",
+  "group": "Widgets",
+  "description": "Generate a recipe card for a recipe.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/visualizeRecipe",
+  "endpoint_method": "POST",
+  "parameters": {
+    "title": {
+      "Name": "title",
+      "Type": "string",
+      "Example": "My recipe",
+      "Description": "The title of the recipe."
+    },
+    "ingredients": {
+      "Name": "ingredients",
+      "Type": "string",
+      "Example": "2 cups of green beans",
+      "Description": "The ingredient list of the recipe, one ingredient per line (separate lines with \\n)."
+    },
+    "instructions": {
+      "Name": "instructions",
+      "Type": "string",
+      "Example": "cook the beans",
+      "Description": "The instructions to make the recipe. One step per line (separate lines with \\n)."
+    },
+    "readyInMinutes": {
+      "Name": "readyInMinutes",
+      "Type": "number",
+      "Example": "60",
+      "Description": "The number of minutes it takes to get the recipe on the table."
+    },
+    "servings": {
+      "Name": "servings",
+      "Type": "number",
+      "Example": "2",
+      "Description": "The number of servings the recipe makes."
+    },
+    "mask": {
+      "Name": "mask",
+      "Type": "string",
+      "Example": "ellipseMask",
+      "Description": "The mask to put over the recipe image (\"ellipseMask\", \"diamondMask\", \"starMask\", \"heartMask\", \"potMask\", \"fishMask\")."
+    },
+    "backgroundImage": {
+      "Name": "backgroundImage",
+      "Type": "string",
+      "Example": "background1",
+      "Description": "The background image (\"none\",\"background1\", or \"background2\")."
+    },
+    "image": {
+      "Name": "image",
+      "Type": "binary",
+      "Example": "",
+      "Description": "The binary image of the recipe as jpg."
+    },
+    "imageUrl": {
+      "Name": "imageUrl",
+      "Type": "string",
+      "Example": "https://recipe.com/image.jpg",
+      "Description": "If you do not sent a binary image you can also pass the image URL."
+    },
+    "author": {
+      "Name": "author",
+      "Type": "string",
+      "Example": "Anna Banana",
+      "Description": "The author of the recipe."
+    },
+    "backgroundColor": {
+      "Name": "backgroundColor",
+      "Type": "string",
+      "Example": "#ffffff",
+      "Description": "The background color for the recipe card as a hex-string."
+    },
+    "fontColor": {
+      "Name": "fontColor",
+      "Type": "string",
+      "Example": "#333333",
+      "Description": "The font color for the recipe card as a hex-string."
+    },
+    "source": {
+      "Name": "source",
+      "Type": "string",
+      "Example": "spoonacular.com",
+      "Description": "The source of the recipe."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"url\": \"https://spoonacular.com/url-to-generated-recipe-card.jpg\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

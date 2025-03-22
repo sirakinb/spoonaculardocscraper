@@ -1,0 +1,40 @@
+{
+  "title": "Get Random Recipes",
+  "group": "Recipes",
+  "description": "Find random (popular) recipes. If you need to filter recipes by diet, nutrition etc. you might want to consider using the complex recipe search endpoint and set the sort request parameter to random.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/random",
+  "endpoint_method": "GET",
+  "parameters": {
+    "includeNutrition": {
+      "Name": "includeNutrition",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether to include nutritional information to returned recipes."
+    },
+    "include-tags": {
+      "Name": "include-tags",
+      "Type": "string",
+      "Example": "vegetarian, dessert",
+      "Description": "The tags (can be diets, meal types, cuisines, or intolerances) that the recipe must have."
+    },
+    "exclude-tags": {
+      "Name": "exclude-tags",
+      "Type": "string",
+      "Example": "dairy",
+      "Description": "The tags (can be diets, meal types, cuisines, or intolerances) that the recipe must NOT have."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "1",
+      "Description": "The number of random recipes to be returned (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"recipes\":[\n        {/* recipe data as in Get Recipe Information endpoint */}\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points  per recipe returned and 0.5 points per recipe returned if includeNutrition is set to true. \n    Learn more about quotas."
+}

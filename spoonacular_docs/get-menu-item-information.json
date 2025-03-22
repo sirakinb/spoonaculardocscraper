@@ -1,0 +1,22 @@
+{
+  "title": "Get Menu Item Information",
+  "group": "Menu Items",
+  "description": "Use a menu item id to get all available information about a menu item, such as nutrition.",
+  "endpoint_url": "https://api.spoonacular.com/food/menuItems/{id}",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "424571",
+      "Description": "The menu item id."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"id\": 424571,\n    \"title\": \"Bacon King Burger\",\n    \"restaurantChain\": \"Burger King\",\n    \"nutrition\": {\n        \"nutrients\": [\n            {\n                \"name\": \"Fat\",\n                \"amount\": 69,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 30\n            },\n            {\n                \"name\": \"Protein\",\n                \"amount\": 57,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 35\n            },\n            {\n                \"name\": \"Calories\",\n                \"amount\": 1040,\n                \"unit\": \"cal\",\n                \"percentOfDailyNeeds\": 50\n            },\n            {\n                \"name\": \"Carbohydrates\",\n                \"amount\": 48,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 35\n            }\n        ],\n        \"caloricBreakdown\": {\n            \"percentProtein\": 35,\n            \"percentFat\": 30,\n            \"percentCarbs\": 35\n        }\n    },\n    \"badges\": [],\n    \"breadcrumbs\": [\n        \"burger\",\n        \"main course\",\n        \"food product category\"\n    ],\n    \"generatedText\": null,\n    \"imageType\": \"png\",\n    \"likes\": 0,\n    \"servings\": {\n        \"number\": 1,\n        \"size\": 2,\n        \"unit\": \"oz\"\n    },\n    \"price\": null,\n    \"spoonacularScore\": null\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

@@ -1,0 +1,34 @@
+{
+  "title": "Get Meal Plan Day",
+  "group": "Meal Plans",
+  "description": "Retrieve a meal planned day for the given user. The username must be a spoonacular user and the hash must the the user's hash that can be found in his/her account.",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/{username}/day/{date}",
+  "endpoint_method": "GET",
+  "parameters": {
+    "username": {
+      "Name": "username",
+      "Type": "string",
+      "Example": "dsky",
+      "Description": "The username."
+    },
+    "date": {
+      "Name": "date",
+      "Type": "string",
+      "Example": "2020-06-01",
+      "Description": "The date of the meal planned day in the format yyyy-mm-dd."
+    },
+    "hash": {
+      "Name": "hash",
+      "Type": "string",
+      "Example": "4b5v4398573406",
+      "Description": "The private hash for the username."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"nutritionSummary\": {\n        \"nutrients\": [\n            {\n                \"name\": \"Calories\",\n                \"amount\": 310,\n                \"unit\": \"cal\",\n                \"percentOfDailyNeeds\": 16\n            },\n            {\n                \"name\": \"Fat\",\n                \"amount\": 25,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 38\n            },\n            {\n                \"name\": \"Carbohydrates\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Protein\",\n                \"amount\": 20,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 40\n            }\n        ]\n    },\n    \"nutritionSummaryBreakfast\": {\n        \"nutrients\": [\n            {\n                \"name\": \"Calories\",\n                \"amount\": 0,\n                \"unit\": \"cal\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Fat\",\n                \"amount\": 0,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Carbohydrates\",\n                \"amount\": 0,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Protein\",\n                \"amount\": 0,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            }\n        ]\n    },\n    \"nutritionSummaryLunch\": {\n        \"nutrients\": [\n            {\n                \"name\": \"Calories\",\n                \"amount\": 310,\n                \"unit\": \"cal\",\n                \"percentOfDailyNeeds\": 16\n            },\n            {\n                \"name\": \"Fat\",\n                \"amount\": 25,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 38\n            },\n            {\n                \"name\": \"Carbohydrates\",\n                \"amount\": 1,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Protein\",\n                \"amount\": 20,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 40\n            }\n        ]\n    },\n    \"nutritionSummaryDinner\": {\n        \"nutrients\": [\n            {\n                \"name\": \"Calories\",\n                \"amount\": 0,\n                \"unit\": \"cal\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Fat\",\n                \"amount\": 0,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Carbohydrates\",\n                \"amount\": 0,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            },\n            {\n                \"name\": \"Protein\",\n                \"amount\": 0,\n                \"unit\": \"g\",\n                \"percentOfDailyNeeds\": 0\n            }\n        ]\n    },\n    \"date\": 1589155200,\n    \"day\": \"Monday\",\n    \"items\": [\n        {\n            \"id\": 1976489,\n            \"slot\": 1,\n            \"position\": 1,\n            \"type\": \"RECIPE\",\n            \"value\": {\n                \"servings\": 2,\n                \"id\": 1023004,\n                \"title\": \"Foolproof Meatloaf\",\n                \"imageType\": \"\"\n            }\n        },\n        {\n            \"id\": 1976490,\n            \"slot\": 2,\n            \"position\": 2,\n            \"type\": \"CUSTOM_FOOD\",\n            \"value\": {\n                \"servings\": 1,\n                \"id\": 345,\n                \"title\": \"Denn's Lamb Bratwurst - 1/2 Pkg\",\n                \"image\": \"https://img.spoonacular.com/ingredients_100x100/bratwurst.jpg\"\n            }\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

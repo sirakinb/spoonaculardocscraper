@@ -1,0 +1,28 @@
+{
+  "title": "Classify Grocery Product Bulk",
+  "group": "Products",
+  "description": "Provide a set of product jsons, get back classified products.",
+  "endpoint_url": "https://api.spoonacular.com/food/products/classifyBatch",
+  "endpoint_method": "POST",
+  "parameters": {
+    "(post body)": {
+      "Name": "(post body)",
+      "Type": "string",
+      "Example": "[{\n                \"title\": \"Kroger Vitamin A & D Reduced Fat 2% Milk\",\n                \"upc\": \"\",\n                \"plu_code\": \"\"\n              }]",
+      "Description": "A json array containing objects, each with the product title."
+    },
+    "locale": {
+      "Name": "locale",
+      "Type": "string",
+      "Example": "en_US",
+      "Description": "The display name of the returned category, supported is en_US (for American English) and en_GB (for British English)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "[\n        { /* see classify grocery product result */ }\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 0.5 points per classified product. Learn more about quotas."
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Meal Types",
+  "group": "Guides",
+  "description": "Every API endpoint asking for a type parameter can be fed with any of these meal types.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

@@ -1,0 +1,10 @@
+{
+  "title": "Diets",
+  "group": "Guides",
+  "description": "Every API endpoint asking for an diet parameter can be fed with any of these diets.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

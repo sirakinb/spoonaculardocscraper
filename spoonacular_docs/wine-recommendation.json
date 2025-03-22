@@ -1,0 +1,40 @@
+{
+  "title": "Wine Recommendation",
+  "group": "Wine",
+  "description": "Get a specific wine recommendation (concrete product) for a given wine type, e.g. \"merlot\".",
+  "endpoint_url": "https://api.spoonacular.com/food/wine/recommendation",
+  "endpoint_method": "GET",
+  "parameters": {
+    "wine": {
+      "Name": "wine",
+      "Type": "string",
+      "Example": "merlot",
+      "Description": "The type of wine to get a specific product recommendation for."
+    },
+    "maxPrice": {
+      "Name": "maxPrice",
+      "Type": "number",
+      "Example": "50",
+      "Description": "The maximum price for the specific wine recommendation in USD."
+    },
+    "minRating": {
+      "Name": "minRating",
+      "Type": "number",
+      "Example": "0.7",
+      "Description": "The minimum rating of the recommended wine between 0 and 1. For example, 0.8 equals 4 out of 5 stars."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "3",
+      "Description": "The number of wine recommendations expected (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"recommendedWines\": [\n        {\n            \"id\": 447938,\n            \"title\": \"Rombauer Merlot\",\n            \"averageRating\": 0.96,\n            \"description\": \"Enticing and lively red color; beautifully aromatic with black cherry and ripe plum. On the palate a purity of blackcurrant, cedar and mint flavors blend together seamlessly. Soft and supple, this wine has a medium-bodied mouth-feel with plush tannins that integrate with the generous finish.Our favorite pairings for this wine include chicken parmesan, cedar-planked salmon over wild rice, and mushroom pizza.\",\n            \"imageUrl\": \"https://img.spoonacular.com/products/447938-312x231.jpg\",\n            \"link\": \"https://click.linksynergy.com/deeplink?id=*QCiIS6t4gA&mid=2025&murl=https%3A%2F%2Fwww.wine.com%2Fproduct%2Frombauer-merlot-2008%2F116883\",\n            \"price\": \"$25.59\",\n            \"ratingCount\": 5.0,\n            \"score\": 0.8975\n        },\n        {\n            \"id\": 430475,\n            \"title\": \"NV The Big Kahuna Merlot\",\n            \"averageRating\": 0.9,\n            \"description\": \"A ripe and rounded Merlot with notes of plum, blackberry, and hint of spice.\",\n            \"imageUrl\": \"https://img.spoonacular.com/products/430475-312x231.jpg\",\n            \"link\": \"https://www.amazon.com/Big-Kahuna-Merlot-Red-Wine/dp/B01F5XPTUW?tag=spoonacular-20\",\n            \"price\": \"$6.99\",\n            \"ratingCount\": 4.0,\n            \"score\": 0.823076923076923\n        }\n    ],\n    \"totalFound\": 21\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points  per wine returned. \n    Learn more about quotas."
+}

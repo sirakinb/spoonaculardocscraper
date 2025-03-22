@@ -1,0 +1,28 @@
+{
+  "title": "Autocomplete Recipe Search",
+  "group": "Recipes",
+  "description": "Autocomplete a partial input to suggest possible recipe names.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/autocomplete",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "burger",
+      "Description": "The query to be autocompleted."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of results to return (between 1 and 25)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "[\n    {\n        \"id\": 296687,\n        \"title\": \"chicken\",\n        \"imageType\": \"jpg\"\n    },\n    {\n        \"id\": 42569,\n        \"title\": \"chicken bbq\",\n        \"imageType\": \"jpg\"\n    },\n\n    {\n        \"id\": 83890,\n        \"title\": \"chicken blt\",\n        \"imageType\": \"jpg\"\n    },\n    {\n        \"id\": 737543,\n        \"title\": \"chicken pie\",\n        \"imageType\": \"jpg\"\n    }\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 0.1 points. Learn more about quotas."
+}

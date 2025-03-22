@@ -1,0 +1,22 @@
+{
+  "title": "Equipment by ID",
+  "group": "Recipes",
+  "description": "Get a recipe's equipment list.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/equipmentWidget.json",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "1003464",
+      "Description": "The recipe id."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"equipment\": [\n        {\n            \"image\": \"pie-pan.png\",\n            \"name\": \"pie form\"\n        },\n        {\n            \"image\": \"bowl.jpg\",\n            \"name\": \"bowl\"\n        },\n        {\n            \"image\": \"oven.jpg\",\n            \"name\": \"oven\"\n        },\n        {\n            \"image\": \"pan.png\",\n            \"name\": \"frying pan\"\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

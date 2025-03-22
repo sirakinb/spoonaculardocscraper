@@ -1,0 +1,35 @@
+{
+  "title": "Menu Item Nutrition Label Image",
+  "group": "Widgets",
+  "description": "Visualize a menu item's nutritional label information as an image.",
+  "endpoint_url": "https://api.spoonacular.com/food/menuItems/{id}/nutritionLabel.png",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "342313",
+      "Description": "The menu item id."
+    },
+    "showOptionalNutrients": {
+      "Name": "showOptionalNutrients",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show optional nutrients."
+    },
+    "showZeroValues": {
+      "Name": "showZeroValues",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show zero values."
+    },
+    "showIngredients": {
+      "Name": "showIngredients",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to show a list of ingredients."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 3 points. Learn more about quotas."
+}

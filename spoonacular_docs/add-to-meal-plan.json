@@ -1,0 +1,56 @@
+{
+  "title": "Add to Meal Plan",
+  "group": "Meal Plans",
+  "description": "Add an item to the user's meal plan.",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/{username}/items",
+  "endpoint_method": "POST",
+  "parameters": {
+    "username": {
+      "Name": "username",
+      "Type": "string",
+      "Example": "dsky",
+      "Description": "The username."
+    },
+    "hash": {
+      "Name": "hash",
+      "Type": "string",
+      "Example": "4b5v4398573406",
+      "Description": "The private hash for the username."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"date\": 1589500800,\n    \"slot\": 1,\n    \"position\": 0,\n    \"type\": \"INGREDIENTS\",\n    \"value\": {\n        \"ingredients\": [\n            {\n                \"name\": \"1 banana\"\n            }\n        ]\n    }\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"date\": 1589500800,\n    \"slot\": 1,\n    \"position\": 0,\n    \"type\": \"RECIPE\",\n    \"value\": {\n        \"id\": 296213,\n        \"servings\": 2,\n        \"title\": \"Spinach Salad with Roasted Vegetables and Spiced Chickpea\",\n        \"imageType\": \"jpg\",\n    }\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"date\": 1589500800,\n    \"slot\": 1,\n    \"position\": 0,\n    \"type\": \"PRODUCT\",\n    \"value\": {\n        \"id\": 183433,\n        \"servings\": 1,\n        \"title\": \"Ahold Lasagna with Meat Sauce\",\n        \"imageType\": \"jpg\"\n    }\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"date\": 1589500800,\n    \"slot\": 1,\n    \"position\": 0,\n    \"type\": \"MENU_ITEM\",\n    \"value\": {\n        \"id\": 378557,\n        \"servings\": 1,\n        \"title\": \"Pizza 73 BBQ Steak Pizza, 9\",\n        \"imageType\": \"png\"\n    }\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"date\": 1589500800,\n    \"slot\": 1,\n    \"position\": 0,\n    \"type\": \"CUSTOM_FOOD\",\n    \"value\": {\n        \"id\": 348,\n        \"servings\": 1,\n        \"title\": \"Aldi Spicy Cashews - 30g\",\n        \"image\": \"https://img.spoonacular.com/ingredients_100x100/cashews.jpg\"\n    }\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"date\": 1589500800,\n    \"slot\": 1,\n    \"position\": 0,\n    \"type\": \"INGREDIENTS\",\n    \"value\": {\n        \"ingredients\": [\n            {\n                \"name\": \"1 banana\"\n            },\n            {\n                \"name\": \"coffee\",\n                \"unit\": \"cup\",\n                \"amount\": \"1\",\n                \"image\": \"https://img.spoonacular.com/ingredients_100x100/brewed-coffee.jpg\"\n            },\n        ]\n    }\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"mealPlanTemplateId\": 120,\n  \t\"startDate\": 1596575356,    \n}"
+    },
+    {
+      "language": "json",
+      "code": "[\n    {\n        \"date\": 1589500800,\n        \"slot\": 1,\n        \"position\": 0,\n        \"type\": \"INGREDIENTS\",\n        \"value\": {\n            \"ingredients\": [\n                {\n                    \"name\": \"1 banana\"\n                },\n                {\n                    \"name\": \"coffee\",\n                    \"unit\": \"cup\",\n                    \"amount\": \"1\",\n                    \"image\": \"https://img.spoonacular.com/ingredients_100x100/brewed-coffee.jpg\"\n                },\n            ]\n        }\n    },\n    {\n        \"date\": 1589500800,\n        \"slot\": 2,\n        \"position\": 0,\n        \"type\": \"CUSTOM_FOOD\",\n        \"value\": {\n            \"id\": 348,\n            \"servings\": 1,\n            \"title\": \"Aldi Spicy Cashews - 30g\",\n            \"image\": \"https://img.spoonacular.com/ingredients_100x100/cashews.jpg\"\n        }\n    }\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.1 points  per additional item added. \n    Learn more about quotas."
+}

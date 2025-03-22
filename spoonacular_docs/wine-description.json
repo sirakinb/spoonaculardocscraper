@@ -1,0 +1,22 @@
+{
+  "title": "Wine Description",
+  "group": "Wine",
+  "description": "Get a simple description of a certain wine, e.g. \"malbec\", \"riesling\", or \"merlot\".",
+  "endpoint_url": "https://api.spoonacular.com/food/wine/description",
+  "endpoint_method": "GET",
+  "parameters": {
+    "wine": {
+      "Name": "wine",
+      "Type": "string",
+      "Example": "merlot",
+      "Description": "The name of the wine that should be paired, e.g. \"merlot\", \"riesling\", or \"malbec\"."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"wineDescription\": \"Merlot is a dry red wine which is smooth and medium bodied.\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

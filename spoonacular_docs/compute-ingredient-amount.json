@@ -1,0 +1,40 @@
+{
+  "title": "Compute Ingredient Amount",
+  "group": "Ingredients",
+  "description": "Compute the amount you need of a certain ingredient for a certain nutritional goal. For example, how much pineapple do you have to eat to get 10 grams of protein?",
+  "endpoint_url": "https://api.spoonacular.com/food/ingredients/{id}/amount",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "9266",
+      "Description": "The id of the ingredient you want the amount for."
+    },
+    "nutrient": {
+      "Name": "nutrient",
+      "Type": "string",
+      "Example": "protein",
+      "Description": "The target nutrient. See a list of supported nutrients."
+    },
+    "target": {
+      "Name": "target",
+      "Type": "number",
+      "Example": "2",
+      "Description": "The target number of the given nutrient."
+    },
+    "unit": {
+      "Name": "unit",
+      "Type": "string",
+      "Example": "oz",
+      "Description": "The target unit."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"amount\": 65.32,\n    \"unit\": \"oz\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

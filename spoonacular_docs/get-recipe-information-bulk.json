@@ -1,0 +1,28 @@
+{
+  "title": "Get Recipe Information Bulk",
+  "group": "Recipes",
+  "description": "Get information about multiple recipes at once. This is equivalent to calling the Get Recipe Information endpoint multiple times, but faster.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/informationBulk",
+  "endpoint_method": "GET",
+  "parameters": {
+    "ids": {
+      "Name": "ids",
+      "Type": "string",
+      "Example": "715538,716429",
+      "Description": "A comma-separated list of recipe ids."
+    },
+    "includeNutrition": {
+      "Name": "includeNutrition",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Include nutrition data to the recipe information. Nutrition data is per serving. If you want the nutrition data for the entire recipe, just multiply by the number of servings."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "[\n    {/* recipe data as in Get Recipe Information endpoint */},\n    {/* recipe data as in Get Recipe Information endpoint */}\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point for the first recipe and 0.5 points  for every additional recipe returned. \n    Learn more about quotas."
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Guess Nutrition by Dish Name",
+  "group": "Recipes",
+  "description": "Estimate the macronutrients of a dish based on its title.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/guessNutrition",
+  "endpoint_method": "GET",
+  "parameters": {
+    "title": {
+      "Name": "title",
+      "Type": "string",
+      "Example": "Spaghetti Aglio et Olio",
+      "Description": "The title of the dish."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"calories\": {\n        \"confidenceRange95Percent\": {\n            \"max\": 574.07,\n            \"min\": 389.92\n        },\n        \"standardDeviation\": 148.55,\n        \"unit\": \"calories\",\n        \"value\": 428.0\n    },\n    \"carbs\": {\n        \"confidenceRange95Percent\": {\n            \"max\": 78.19,\n            \"min\": 55.54\n        },\n        \"standardDeviation\": 18.27,\n        \"unit\": \"g\",\n        \"value\": 65.0\n    },\n    \"fat\": {\n        \"confidenceRange95Percent\": {\n            \"max\": 19.2,\n            \"min\": 12.27\n        },\n        \"standardDeviation\": 5.59,\n        \"unit\": \"g\",\n        \"value\": 16.0\n    },\n    \"protein\": {\n        \"confidenceRange95Percent\": {\n            \"max\": 29.31,\n            \"min\": 8.12\n        },\n        \"standardDeviation\": 17.09,\n        \"unit\": \"g\",\n        \"value\": 13.0\n    },\n    \"recipesUsed\": 10\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

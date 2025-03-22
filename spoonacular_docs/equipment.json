@@ -1,0 +1,10 @@
+{
+  "title": "Equipment",
+  "group": "Misc",
+  "description": "Every API endpoint asking for a equipment parameter can be fed with any of these cooking equipments.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

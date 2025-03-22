@@ -1,0 +1,106 @@
+{
+  "title": "Ingredient Search",
+  "group": "Ingredients",
+  "description": "Search for simple whole foods (e.g. fruits, vegetables, nuts, grains, meat, fish, dairy etc.).",
+  "endpoint_url": "https://api.spoonacular.com/food/ingredients/search",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "apple",
+      "Description": "The partial or full ingredient name."
+    },
+    "addChildren": {
+      "Name": "addChildren",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether to add children of found foods."
+    },
+    "minProteinPercent": {
+      "Name": "minProteinPercent",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum percentage of protein the food must have (between 0 and 100)."
+    },
+    "maxProteinPercent": {
+      "Name": "maxProteinPercent",
+      "Type": "number",
+      "Example": "90",
+      "Description": "The maximum percentage of protein the food can have (between 0 and 100)."
+    },
+    "minFatPercent": {
+      "Name": "minFatPercent",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum percentage of fat the food must have (between 0 and 100)."
+    },
+    "maxFatPercent": {
+      "Name": "maxFatPercent",
+      "Type": "number",
+      "Example": "90",
+      "Description": "The maximum percentage of fat the food can have (between 0 and 100)."
+    },
+    "minCarbsPercent": {
+      "Name": "minCarbsPercent",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum percentage of carbs the food must have (between 0 and 100)."
+    },
+    "maxCarbsPercent": {
+      "Name": "maxCarbsPercent",
+      "Type": "number",
+      "Example": "90",
+      "Description": "The maximum percentage of carbs the food can have (between 0 and 100)."
+    },
+    "metaInformation": {
+      "Name": "metaInformation",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to return more meta information about the ingredients."
+    },
+    "intolerances": {
+      "Name": "intolerances",
+      "Type": "string",
+      "Example": "egg",
+      "Description": "A comma-separated list of intolerances. All recipes returned must not contain ingredients that are not suitable for people with the intolerances entered. See a full list of supported intolerances."
+    },
+    "sort": {
+      "Name": "sort",
+      "Type": "string",
+      "Example": "calories",
+      "Description": "The strategy to sort ingredients by. You can sort by any nutrient listed here."
+    },
+    "sortDirection": {
+      "Name": "sortDirection",
+      "Type": "string",
+      "Example": "asc",
+      "Description": "The direction in which to sort. Must be either 'asc' (ascending) or 'desc' (descending)."
+    },
+    "language": {
+      "Name": "language",
+      "Type": "text",
+      "Example": "en",
+      "Description": "Language code, either \"en\" or \"de\"."
+    },
+    "offset": {
+      "Name": "offset",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The number of results to skip (between 0 and 990)."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of expected results (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"results\": [\n        {\n            \"id\": 19400,\n            \"name\": \"banana chips\",\n            \"image\": \"banana-chips.jpg\"\n        },\n        {\n            \"id\": 93779,\n            \"name\": \"banana liqueur\",\n            \"image\": \"limoncello.jpg\"\n        }\n    ],\n    \"offset\": 0,\n    \"number\": 2,\n    \"totalResults\": 13\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points  per result if metaInformation is set to true. \n    Learn more about quotas."
+}

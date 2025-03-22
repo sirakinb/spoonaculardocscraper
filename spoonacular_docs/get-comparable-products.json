@@ -1,0 +1,22 @@
+{
+  "title": "Get Comparable Products",
+  "group": "Products",
+  "description": "Find comparable products to the given one.",
+  "endpoint_url": "https://api.spoonacular.com/food/products/upc/{upc}/comparable",
+  "endpoint_method": "GET",
+  "parameters": {
+    "upc": {
+      "Name": "upc",
+      "Type": "number",
+      "Example": "033698816271",
+      "Description": "The UPC of the product for which you want to find comparable products."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"comparableProducts\": {\n        \"calories\": [],\n        \"likes\": [],\n        \"price\": [],\n        \"protein\": [\n            {\n                \"difference\": 3,\n                \"id\": 11797,\n                \"image\": \"https://img.spoonacular.com/products/11797.jpg\",\n                \"title\": \"Casa Visco Capers\"\n            },\n            {\n                \"difference\": 1,\n                \"id\": 90962,\n                \"image\": \"https://img.spoonacular.com/products/90962.jpg\",\n                \"title\": \"Colavita Capers\"\n            },\n            {\n                \"difference\": 1,\n                \"id\": 88139,\n                \"image\": \"https://img.spoonacular.com/products/88139.jpg\",\n                \"title\": \"Mezzetta Capers\"\n            },\n            {\n                \"difference\": 1,\n                \"id\": 152832,\n                \"image\": \"https://spoonacular.com/com/productImages/152832.jpg\",\n                \"title\": \"Victoria Imported Capers\"\n            }\n        ],\n        \"spoonacularScore\": [\n            {\n                \"difference\": 7,\n                \"id\": 125354,\n                \"image\": \"https://img.spoonacular.com/products/125354.jpg\",\n                \"title\": \"DeLallo Capers\"\n            },\n            {\n                \"difference\": 7,\n                \"id\": 118361,\n                \"image\": \"https://spoonacular.com/com/productImages/118361.jpg\",\n                \"title\": \"Haddon House Non Pareil Capers\"\n            },\n            {\n                \"difference\": 7,\n                \"id\": 113686,\n                \"image\": \"https://img.spoonacular.com/products/113686.jpg\",\n                \"title\": \"Dell Alpe Capers\"\n            },\n            {\n                \"difference\": 7,\n                \"id\": 112078,\n                \"image\": \"https://img.spoonacular.com/products/112078.jpg\",\n                \"title\": \"Paesana Imported Capers\"\n            }\n        ],\n        \"sugar\": []\n    }\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

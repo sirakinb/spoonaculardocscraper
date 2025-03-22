@@ -1,0 +1,10 @@
+{
+  "title": "Grocery Products Overview",
+  "group": "Products",
+  "description": "The spoonacular grocery products API allows you to search through all products. You can find products by query (e.g. \"pizza\") and/or by macro-nutrients (e.g. <500 calories).",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

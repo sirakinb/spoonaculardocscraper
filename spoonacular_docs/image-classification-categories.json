@@ -1,0 +1,10 @@
+{
+  "title": "Image Classification Categories",
+  "group": "Guides",
+  "description": "The image classification and image analysis API endpoints can detect the following classes.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

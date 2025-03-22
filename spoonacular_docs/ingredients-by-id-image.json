@@ -1,0 +1,23 @@
+{
+  "title": "Ingredients by ID Image",
+  "group": "Widgets",
+  "description": "Visualize a recipe's ingredient list.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/ingredientWidget.png",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "1082038",
+      "Description": "The recipe id."
+    },
+    "measure": {
+      "Name": "measure",
+      "Type": "string",
+      "Example": "metric",
+      "Description": "Whether the the measures should be 'us' or 'metric'."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 3 points. Learn more about quotas."
+}

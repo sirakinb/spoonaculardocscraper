@@ -1,0 +1,46 @@
+{
+  "title": "Extract Recipe from Website",
+  "group": "Recipes",
+  "description": "This endpoint lets you extract recipe data such as title, ingredients, and instructions from any properly formatted Website.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/extract",
+  "endpoint_method": "GET",
+  "parameters": {
+    "url": {
+      "Name": "url",
+      "Type": "string",
+      "Example": "https://foodista.com/recipe/ZHK4KPB6/chocolate-crinkle-cookies",
+      "Description": "The URL of the recipe page."
+    },
+    "forceExtraction": {
+      "Name": "forceExtraction",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "If true, the extraction will be triggered whether we already know the recipe or not. Use this only if information is missing as this operation is slower."
+    },
+    "analyze": {
+      "Name": "analyze",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "If true, the recipe will be analyzed and classified resolving in more data such as cuisines, dish types, and more."
+    },
+    "includeNutrition": {
+      "Name": "includeNutrition",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether nutrition data should be added to correctly parsed ingredients."
+    },
+    "includeTaste": {
+      "Name": "includeTaste",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether taste data should be added to correctly parsed ingredients."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{/* recipe data as in Get Recipe Information endpoint */}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 1 points  if analyze is set to true. \n    Learn more about quotas."
+}

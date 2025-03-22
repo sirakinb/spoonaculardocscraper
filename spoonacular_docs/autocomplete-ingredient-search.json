@@ -1,0 +1,46 @@
+{
+  "title": "Autocomplete Ingredient Search",
+  "group": "Ingredients",
+  "description": "Autocomplete the entry of an ingredient.",
+  "endpoint_url": "https://api.spoonacular.com/food/ingredients/autocomplete",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "appl",
+      "Description": "The partial or full ingredient name."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of results to return (between 1 and 100)."
+    },
+    "language": {
+      "Name": "language",
+      "Type": "text",
+      "Example": "en",
+      "Description": "Language code, either \"en\" or \"de\"."
+    },
+    "metaInformation": {
+      "Name": "metaInformation",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Whether to return more meta information about the ingredients."
+    },
+    "intolerances": {
+      "Name": "intolerances",
+      "Type": "string",
+      "Example": "egg",
+      "Description": "A comma-separated list of intolerances. All recipes returned must not contain ingredients that are not suitable for people with the intolerances entered. See a full list of supported intolerances."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "[\n    {\n        \"name\": \"apple\",\n        \"image\": \"apple.jpg\",\n        \"id\": 9003,\n        \"aisle\": \"Produce\",\n        \"possibleUnits\": [\n            \"small\",\n            \"large\",\n            \"piece\",\n            \"slice\",\n            \"g\",\n            \"extra small\",\n            \"medium\",\n            \"oz\",\n            \"cup slice\",\n            \"cup\",\n            \"serving\"\n        ]\n    },\n    {\n        \"name\": \"applesauce\",\n        \"image\": \"applesauce.png\",\n        \"id\": 9019,\n        \"aisle\": \"Canned and Jarred\",\n        \"possibleUnits\": [\n            \"g\",\n            \"oz\",\n            \"cup\",\n            \"serving\",\n            \"tablespoon\"\n        ]\n    },\n    {\n        \"name\": \"apple juice\",\n        \"image\": \"apple-juice.jpg\",\n        \"id\": 9016,\n        \"aisle\": \"Beverages\",\n        \"possibleUnits\": [\n            \"g\",\n            \"drink box\",\n            \"fl oz\",\n            \"oz\",\n            \"teaspoon\",\n            \"cup\",\n            \"serving\",\n            \"tablespoon\"\n        ]\n    },\n    {\n        \"name\": \"apple cider\",\n        \"image\": \"apple-cider.jpg\",\n        \"id\": 1009016,\n        \"aisle\": \"Beverages\",\n        \"possibleUnits\": [\n            \"g\",\n            \"drink box\",\n            \"fl oz\",\n            \"oz\",\n            \"teaspoon\",\n            \"bottle NFS\",\n            \"cup\",\n            \"serving\",\n            \"tablespoon\"\n        ]\n    },\n    {\n        \"name\": \"apple jelly\",\n        \"image\": \"apple-jelly.jpg\",\n        \"id\": 10019297,\n        \"aisle\": \"Nut butters, Jams, and Honey\",\n        \"possibleUnits\": [\n            \"g\",\n            \"oz\",\n            \"packet\",\n            \"teaspoon\",\n            \"cup\",\n            \"serving\",\n            \"tablespoon\"\n        ]\n    }\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 0.1 points and 0.01 points  if metaInformation is set to true. \n    Learn more about quotas."
+}

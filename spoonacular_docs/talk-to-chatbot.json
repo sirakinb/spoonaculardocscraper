@@ -1,0 +1,28 @@
+{
+  "title": "Talk to Chatbot",
+  "group": "Misc",
+  "description": "This endpoint can be used to have a conversation about food with the spoonacular chatbot. Use the \"Conversation Suggests\" endpoint to show your user what he or she can say.",
+  "endpoint_url": "https://api.spoonacular.com/food/converse",
+  "endpoint_method": "GET",
+  "parameters": {
+    "text": {
+      "Name": "text",
+      "Type": "string",
+      "Example": "donut recipes",
+      "Description": "The request / question / answer from the user to the chatbot."
+    },
+    "contextId": {
+      "Name": "contextId",
+      "Type": "string",
+      "Example": "342938",
+      "Description": "An arbitrary globally unique id for your conversation. The conversation can contain states so you should pass your context id if you want the bot to be able to remember the conversation."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"answerText\": \"Baby, if you were a fruit you'd be a fineapple.\",\n    \"media\": []\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

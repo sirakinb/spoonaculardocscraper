@@ -1,0 +1,10 @@
+{
+  "title": "Image Classification (Article)",
+  "group": "Guides",
+  "description": "This article compares 7 online image recognition services in the context of food recognition. In particular, my goal was to find out which service is best suited to recognize and classify the dish you ordered in a restaurant based on a picture you took.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

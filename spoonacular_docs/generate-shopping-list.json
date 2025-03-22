@@ -1,0 +1,40 @@
+{
+  "title": "Generate Shopping List",
+  "group": "Meal Plans",
+  "description": "Generate the shopping list for a user from the meal planner in a given time frame.",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/{username}/shopping-list/{start-date}/{end-date}",
+  "endpoint_method": "POST",
+  "parameters": {
+    "username": {
+      "Name": "username",
+      "Type": "string",
+      "Example": "dsky",
+      "Description": "The username."
+    },
+    "start-date": {
+      "Name": "start-date",
+      "Type": "string",
+      "Example": "2020-06-01",
+      "Description": "The start date in the format yyyy-mm-dd."
+    },
+    "end-date": {
+      "Name": "end-date",
+      "Type": "string",
+      "Example": "2020-06-07",
+      "Description": "The end date in the format yyyy-mm-dd."
+    },
+    "hash": {
+      "Name": "hash",
+      "Type": "string",
+      "Example": "4b5v4398573406",
+      "Description": "The private hash for the username."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"aisles\": [\n        {\n            \"aisle\": \"Baking\",\n            \"items\": [\n                {\n                    \"id\": 115388,\n                    \"name\": \"baking powder\",\n                    \"measures\": {\n                        \"original\": {\n                            \"amount\": 1.0,\n                            \"unit\": \"package\"\n                        },\n                        \"metric\": {\n                            \"amount\": 1.0,\n                            \"unit\": \"pkg\"\n                        },\n                        \"us\": {\n                            \"amount\": 1.0,\n                            \"unit\": \"pkg\"\n                        }\n                    },\n                    \"pantryItem\": false,\n                    \"aisle\": \"Baking\",\n                    \"cost\": 0.71,\n                    \"ingredientId\": 18369\n                }                \n            ]\n        }\n    ],\n    \"cost\": 0.71,\n    \"startDate\": 1588291200,\n    \"endDate\": 1588896000\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

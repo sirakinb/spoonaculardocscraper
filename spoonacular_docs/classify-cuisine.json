@@ -1,0 +1,34 @@
+{
+  "title": "Classify Cuisine",
+  "group": "Recipes",
+  "description": "Classify the recipe's cuisine.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/cuisine",
+  "endpoint_method": "POST",
+  "parameters": {
+    "title": {
+      "Name": "title",
+      "Type": "string",
+      "Example": "Pork roast with green beans",
+      "Description": "The title of the recipe."
+    },
+    "ingredientList": {
+      "Name": "ingredientList",
+      "Type": "string",
+      "Example": "3 oz pork shoulder",
+      "Description": "The ingredient list of the recipe, one ingredient per line (separate lines with \\n)."
+    },
+    "language": {
+      "Name": "language",
+      "Type": "string",
+      "Example": "en",
+      "Description": "The input language, either \"en\" or \"de\"."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"cuisine\": \"Mediterranean\",\n    \"cuisines\": [\n        \"Mediterranean\",\n        \"European\",\n        \"Italian\"\n    ],\n    \"confidence\": 0.0\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 0.1 points. Learn more about quotas."
+}

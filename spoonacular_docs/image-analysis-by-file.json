@@ -1,0 +1,22 @@
+{
+  "title": "Image Analysis by File",
+  "group": "Misc",
+  "description": "Analyze a food image. The API tries to classify the image, guess the nutrition, and find a matching recipes. You can play around with that endpoint!",
+  "endpoint_url": "https://api.spoonacular.com/food/images/analyze",
+  "endpoint_method": "POST",
+  "parameters": {
+    "file": {
+      "Name": "file",
+      "Type": "binary",
+      "Example": "-",
+      "Description": "The binary file of the image."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n  \"nutrition\": {\n    \"recipesUsed\": 25,\n    \"calories\": {\n      \"value\": 508,\n      \"unit\": \"calories\",\n      \"confidenceRange95Percent\": {\n        \"min\": 428.97,\n        \"max\": 571.98\n      },\n      \"standardDeviation\": 182.4\n    },\n    \"fat\": {\n      \"value\": 21,\n      \"unit\": \"g\",\n      \"confidenceRange95Percent\": {\n        \"min\": 21.29,\n        \"max\": 32.95\n      },\n      \"standardDeviation\": 14.88\n    },\n    \"protein\": {\n      \"value\": 29,\n      \"unit\": \"g\",\n      \"confidenceRange95Percent\": {\n        \"min\": 22.58,\n        \"max\": 33.7\n      },\n      \"standardDeviation\": 14.19\n    },\n    \"carbs\": {\n      \"value\": 40,\n      \"unit\": \"g\",\n      \"confidenceRange95Percent\": {\n        \"min\": 29.74,\n        \"max\": 44.96\n      },\n      \"standardDeviation\": 19.42\n    }\n  },\n  \"category\": {\n    \"name\": \"burger\",\n    \"probability\": 0.99\n  },\n  \"recipes\": [\n    {\n      \"id\": 477749,\n      \"title\": \"Burger Club: Award-Winning Logan County Burger Patty Melt\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.barbarabakes.com/2010/05/burger-club-award-winning-logan-county/\"\n    },\n    {\n      \"id\": 493632,\n      \"title\": \"New York Burger Week: Pretzel Burger with Beer Cheese\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.foodrepublic.com/2013/09/23/new-york-burger-week-pretzel-burger-beer-cheese\"\n    },\n    {\n      \"id\": 23359,\n      \"title\": \"Beef Burger Recipe (elvis Burger With Salad & Gherkin)\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.jamieoliver.com/recipes/beef-recipes/elvis-burger-with-pickled-gherkin\"\n    },\n    {\n      \"id\": 149115,\n      \"title\": \"Surf N' Turf Burger (Grilled Burger with Lobster and Bacon)\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.seriouseats.com/recipes/2013/06/lobster-bacon-burger-recipe.html\"\n    },\n    {\n      \"id\": 861442,\n      \"title\": \"Istanbul-Style Wet Burger (Islak Burger)\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.epicurious.com/recipes/food/views/istanbul-style-wet-burger-islak-burger?mbid=nl_02272017_Daily_CTN_PM+(1)\"\n    },\n    {\n      \"id\": 600423,\n      \"title\": \"Rajma Burger (Red Kidney Beans Burger)\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.spiceupthecurry.com/rajma-burger-red-kidney-beans-burger/\"\n    },\n    {\n      \"id\": 493634,\n      \"title\": \"Chicago Burger Week: The Chicago Deep Dish Pizza Burger\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.foodrepublic.com/2013/09/30/chicago-burger-week-chicago-deep-dish-pizza-burger\"\n    },\n    {\n      \"id\": 487346,\n      \"title\": \"aloo tikki burger , north indian style aloo tikki burger\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.vegrecipesofindia.com/aloo-tikki-burger/\"\n    },\n    {\n      \"id\": 607330,\n      \"title\": \"Aloo Tikki Burger | How to make aloo tikki burger at home\",\n      \"imageType\": \"jpg\",\n      \"sourceUrl\": \"http://www.spiceupthecurry.com/aloo-tikki-burger-recipe/\"\n    }\n  ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 4 points. Learn more about quotas."
+}

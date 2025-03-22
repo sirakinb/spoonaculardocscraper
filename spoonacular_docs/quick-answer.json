@@ -1,0 +1,22 @@
+{
+  "title": "Quick Answer",
+  "group": "Misc",
+  "description": "Answer a nutrition related natural language question.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/quickAnswer",
+  "endpoint_method": "GET",
+  "parameters": {
+    "q": {
+      "Name": "q",
+      "Type": "string",
+      "Example": "How much vitamin c is in 2 apples?",
+      "Description": "The nutrition related question."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"answer\": \"There are 16.74 mg of Vitamin C in 2 apples. This covers about 20% of your daily needs of Vitamin C.\",\n    \"image\": \"https://img.spoonacular.com/ingredients_100x100/apple.jpg\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

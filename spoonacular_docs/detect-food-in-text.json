@@ -1,0 +1,22 @@
+{
+  "title": "Detect Food in Text",
+  "group": "Misc",
+  "description": "Take any text and find all mentions of food contained within it. This task is also called Named Entity Recognition (NER). In this case, the entities are foods. Either dishes, such as pizza or cheeseburger, or ingredients, such as cucumber or almonds.",
+  "endpoint_url": "https://api.spoonacular.com/food/detect",
+  "endpoint_method": "POST",
+  "parameters": {
+    "text": {
+      "Name": "text",
+      "Type": "string",
+      "Example": "I like to eat delicious tacos. The only thing better is a cheeseburger with cheddar. But then again, pizza with pepperoni, mushrooms, and tomatoes is so good too!",
+      "Description": "The text in which food items, such as dish names and ingredients, should be detected in."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"annotations\": [\n        {\n            \"annotation\": \"cheeseburger\",\n            \"image\": \"https://spoonacular.com/menuItemImages/cheeseburger.jpg\",\n            \"tag\": \"dish\"\n        },\n        {\n            \"annotation\": \"mushrooms\",\n            \"image\": \"https://img.spoonacular.com/ingredients_100x100/mushrooms.png\",\n            \"tag\": \"ingredient\"\n        },\n        {\n            \"annotation\": \"pepperoni\",\n            \"image\": \"https://img.spoonacular.com/ingredients_100x100/pepperoni.png\",\n            \"tag\": \"ingredient\"\n        },\n        {\n            \"annotation\": \"tomatoes\",\n            \"image\": \"https://img.spoonacular.com/ingredients_100x100/tomato.png\",\n            \"tag\": \"ingredient\"\n        },\n        {\n            \"annotation\": \"cheddar\",\n            \"image\": \"https://img.spoonacular.com/ingredients_100x100/cheddar-cheese.png\",\n            \"tag\": \"ingredient\"\n        },\n        {\n            \"annotation\": \"tacos\",\n            \"image\": \"https://spoonacular.com/menuItemImages/taco-isolated.jpg\",\n            \"tag\": \"dish\"\n        },\n        {\n            \"annotation\": \"pizza\",\n            \"image\": \"https://spoonacular.com/menuItemImages/cheese-pizza.png\",\n            \"tag\": \"dish\"\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

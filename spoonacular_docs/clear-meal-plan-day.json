@@ -1,0 +1,29 @@
+{
+  "title": "Clear Meal Plan Day",
+  "group": "Meal Plans",
+  "description": "Delete all planned items from the user's meal plan for a specific day.",
+  "endpoint_url": "https://api.spoonacular.com/mealplanner/{username}/day/{date}",
+  "endpoint_method": "DELETE",
+  "parameters": {
+    "username": {
+      "Name": "username",
+      "Type": "string",
+      "Example": "dsky",
+      "Description": "The username."
+    },
+    "date": {
+      "Name": "date",
+      "Type": "string",
+      "Example": "2020-06-01",
+      "Description": "The date in the format yyyy-mm-dd."
+    },
+    "hash": {
+      "Name": "hash",
+      "Type": "string",
+      "Example": "4b5v4398573406",
+      "Description": "The private hash for the username."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

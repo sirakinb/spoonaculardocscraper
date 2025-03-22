@@ -1,0 +1,10 @@
+{
+  "title": "Rate Limiting & Quotas",
+  "group": "Guides",
+  "description": "When you are on the free plan and your daily quota is used up, the API will respond with the error code 402 and no more calls can be made until your quota resets.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": "Each API plan comes with a daily quota of points. Every API call you make costs a certain amount of points. Usually, every request is 1 point and 0.01 points per result returned, but there are many exceptions. At the bottom of each endpoint description you will find information about the number of points required for that endpoint."
+}

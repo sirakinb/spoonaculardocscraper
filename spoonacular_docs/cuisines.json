@@ -1,0 +1,10 @@
+{
+  "title": "Cuisines",
+  "group": "Guides",
+  "description": "Every API endpoint asking for a cuisine parameter can be fed with any of these cuisines.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

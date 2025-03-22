@@ -1,0 +1,29 @@
+{
+  "title": "Recipe Taste by ID Image",
+  "group": "Widgets",
+  "description": "Get a recipe's taste as an image. The tastes supported are sweet, salty, sour, bitter, savory, and fatty.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/{id}/tasteWidget.png",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "69095",
+      "Description": "The recipe id."
+    },
+    "normalize": {
+      "Name": "normalize",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Normalize to the strongest taste."
+    },
+    "rgb": {
+      "Name": "rgb",
+      "Type": "string",
+      "Example": "75,192,192",
+      "Description": "Red, green, blue values for the chart color."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 3 points. Learn more about quotas."
+}

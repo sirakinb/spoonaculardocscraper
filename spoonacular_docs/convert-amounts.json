@@ -1,0 +1,40 @@
+{
+  "title": "Convert Amounts",
+  "group": "Ingredients",
+  "description": "Convert amounts like \"2 cups of flour to grams\".",
+  "endpoint_url": "https://api.spoonacular.com/recipes/convert",
+  "endpoint_method": "GET",
+  "parameters": {
+    "ingredientName": {
+      "Name": "ingredientName",
+      "Type": "string",
+      "Example": "flour",
+      "Description": "The ingredient which you want to convert."
+    },
+    "sourceAmount": {
+      "Name": "sourceAmount",
+      "Type": "number",
+      "Example": "2.5",
+      "Description": "The amount from which you want to convert, e.g. the 2.5 in \"2.5 cups of flour to grams\"."
+    },
+    "sourceUnit": {
+      "Name": "sourceUnit",
+      "Type": "string",
+      "Example": "cups",
+      "Description": "The unit from which you want to convert, e.g. the grams in \"2.5 cups of flour to grams\". You can also use \"piece\", e.g. \"3.4 oz tomatoes to piece\""
+    },
+    "targetUnit": {
+      "Name": "targetUnit",
+      "Type": "string",
+      "Example": "grams",
+      "Description": "The unit to which you want to convert, e.g. the grams in \"2.5 cups of flour to grams\". You can also use \"piece\", e.g. \"3.4 oz tomatoes to piece\""
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"sourceAmount\": 2.5,\n    \"sourceUnit\": \"cups\",\n    \"targetAmount\": 312.5,\n    \"targetUnit\": \"grams\",\n    \"answer\": \"2.5 cups flour translates to 312.5 grams.\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

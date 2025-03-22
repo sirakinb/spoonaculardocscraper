@@ -1,0 +1,28 @@
+{
+  "title": "Conversation Suggests",
+  "group": "Misc",
+  "description": "This endpoint returns suggestions for things the user can say or ask the chatbot.",
+  "endpoint_url": "https://api.spoonacular.com/food/converse/suggest",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "tell",
+      "Description": "A (partial) query from the user. The endpoint will return if it matches topics it can talk about."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "5",
+      "Description": "The number of suggestions to return (between 1 and 25)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"suggests\": {\n        \"_\": [\n            {\n                \"name\": \"Tell me something funny\"\n            },\n            {\n                \"name\": \"Tell me a food fact\"\n            },\n            {\n                \"name\": \"Tell me a joke\"\n            },\n            {\n                \"name\": \"Tell me food trivia\"\n            },\n            {\n                \"name\": \"Tell me a fact about food\"\n            }\n        ]\n    },\n    \"words\": []\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 0.1 points. Learn more about quotas."
+}

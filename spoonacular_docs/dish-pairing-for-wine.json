@@ -1,0 +1,22 @@
+{
+  "title": "Dish Pairing for Wine",
+  "group": "Wine",
+  "description": "Find a dish that goes well with a given wine.",
+  "endpoint_url": "https://api.spoonacular.com/food/wine/dishes",
+  "endpoint_method": "GET",
+  "parameters": {
+    "wine": {
+      "Name": "wine",
+      "Type": "string",
+      "Example": "malbec",
+      "Description": "The type of wine that should be paired, e.g. \"merlot\", \"riesling\", or \"malbec\"."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"pairings\": [\n        \"stew\",\n        \"steak\",\n        \"chili\",\n        \"burger\"\n    ],\n    \"text\": \"Malbec is a dry red wine which is bold and full bodied. It goes especially well with round steak, tri tip steak, steak, boneless pork chops, and pizza burger.\"\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

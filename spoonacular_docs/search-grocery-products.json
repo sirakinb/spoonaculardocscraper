@@ -1,0 +1,88 @@
+{
+  "title": "Search Grocery Products",
+  "group": "Products",
+  "description": "Search packaged food products, such as frozen pizza or Greek yogurt.",
+  "endpoint_url": "https://api.spoonacular.com/food/products/search",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "greek yogurt",
+      "Description": "The search query."
+    },
+    "minCalories": {
+      "Name": "minCalories",
+      "Type": "number",
+      "Example": "50",
+      "Description": "The minimum amount of calories the product must have per serving."
+    },
+    "maxCalories": {
+      "Name": "maxCalories",
+      "Type": "number",
+      "Example": "800",
+      "Description": "The maximum amount of calories the product can have per serving."
+    },
+    "minCarbs": {
+      "Name": "minCarbs",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum amount of carbohydrates in grams the product must have per serving."
+    },
+    "maxCarbs": {
+      "Name": "maxCarbs",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of carbohydrates in grams the product can have per serving."
+    },
+    "minProtein": {
+      "Name": "minProtein",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum amount of protein in grams the product must have per serving."
+    },
+    "maxProtein": {
+      "Name": "maxProtein",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of protein in grams the product can have per serving."
+    },
+    "minFat": {
+      "Name": "minFat",
+      "Type": "number",
+      "Example": "1",
+      "Description": "The minimum amount of fat in grams the product must have per serving."
+    },
+    "maxFat": {
+      "Name": "maxFat",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of fat in grams the product can have per serving."
+    },
+    "addProductInformation": {
+      "Name": "addProductInformation",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "If set to true, you get more information about the products returned."
+    },
+    "offset": {
+      "Name": "offset",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The number of results to skip (between 0 and 990)."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of expected results (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"products\": [\n        {\n            \"id\": 192386,\n            \"title\": \"Pizza Buddy: Frozen Pizza Dough, 16 Oz\",\n            \"imageType\": \"jpg\"\n        },\n        {\n            \"id\": 27693,\n            \"title\": \"Uno Pizza\",\n            \"imageType\": \"jpg\"\n        }\n    ],\n    \"totalProducts\": 1258,\n    \"type\": \"product\",\n    \"offset\": 0,\n    \"number\": 2\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points per result returned. Since this endpoint combines the capabilities of four different endpoints into one, additional points may be required depending on the parameters you set. If addProductInformation is set to true, 1 point will be added per product returned. Learn more about quotas."
+}

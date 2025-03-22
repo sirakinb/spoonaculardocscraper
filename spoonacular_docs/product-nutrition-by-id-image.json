@@ -1,0 +1,17 @@
+{
+  "title": "Product Nutrition by ID Image",
+  "group": "Widgets",
+  "description": "Visualize a product's nutritional information as an image.",
+  "endpoint_url": "https://api.spoonacular.com/food/products/{id}/nutritionWidget.png",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "7657",
+      "Description": "The id of the product."
+    }
+  },
+  "code_examples": [],
+  "quota": "Calling this endpoint requires 3 points. Learn more about quotas."
+}

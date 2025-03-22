@@ -1,0 +1,10 @@
+{
+  "title": "Show Images",
+  "group": "Guides",
+  "description": "Endpoints like the ingredient autosuggestion will only give you an image name. You have to build the full URL by adding the base path to the beginning. The base path for ingredient images is https://img.spoonacular.com/ingredients_{SIZE}/, where {SIZE} is one of the following:",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

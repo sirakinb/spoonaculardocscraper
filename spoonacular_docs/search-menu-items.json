@@ -1,0 +1,88 @@
+{
+  "title": "Search Menu Items",
+  "group": "Menu Items",
+  "description": "Search over 115,000 menu items from over 800 fast food and chain restaurants. For example, McDonald's Big Mac or Starbucks Mocha.",
+  "endpoint_url": "https://api.spoonacular.com/food/menuItems/search",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "snickers",
+      "Description": "The search query."
+    },
+    "minCalories": {
+      "Name": "minCalories",
+      "Type": "number",
+      "Example": "50",
+      "Description": "The minimum amount of calories the menu item must have per serving."
+    },
+    "maxCalories": {
+      "Name": "maxCalories",
+      "Type": "number",
+      "Example": "800",
+      "Description": "The maximum amount of calories the menu item can have per serving."
+    },
+    "minCarbs": {
+      "Name": "minCarbs",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum amount of carbohydrates in grams the menu item must have per serving."
+    },
+    "maxCarbs": {
+      "Name": "maxCarbs",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of carbohydrates in grams the menu item can have per serving."
+    },
+    "minProtein": {
+      "Name": "minProtein",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The minimum amount of protein in grams the menu item must have per serving."
+    },
+    "maxProtein": {
+      "Name": "maxProtein",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of protein in grams the menu item can have per serving."
+    },
+    "minFat": {
+      "Name": "minFat",
+      "Type": "number",
+      "Example": "1",
+      "Description": "The minimum amount of fat in grams the menu item must have per serving."
+    },
+    "maxFat": {
+      "Name": "maxFat",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The maximum amount of fat in grams the menu item can have per serving."
+    },
+    "addMenuItemInformation": {
+      "Name": "addMenuItemInformation",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "If set to true, you get more information about the menu items returned."
+    },
+    "offset": {
+      "Name": "offset",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The offset number for paging (between 0 and 990)."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "100",
+      "Description": "The number of expected results (between 1 and 10)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"menuItems\": [\n        {\n            \"id\": 419357,\n            \"title\": \"Burger Sliders\",\n            \"restaurantChain\": \"Hooters\",\n            \"image\": \"https://img.spoonacular.com/menu-items/419357-312x231.png\",\n            \"imageType\": \"png\",\n            \"servings\": {\n                \"number\": 1,\n                \"size\": 2,\n                \"unit\": \"oz\"\n            }\n        },\n        {\n            \"id\": 424571,\n            \"title\": \"Bacon King Burger\",\n            \"restaurantChain\": \"Burger King\",\n            \"image\": \"https://img.spoonacular.com/menu-items/424571-312x231.png\",\n            \"imageType\": \"png\",\n            \"servings\": {\n                \"number\": 1,\n                \"size\": 2,\n                \"unit\": \"oz\"\n            }\n        }\n    ],\n    \"totalMenuItems\": 6749,\n    \"type\": \"menuItem\",\n    \"offset\": 0,\n    \"number\": 2\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.01 points per result returned. Since this endpoint combines the capabilities of four different endpoints into one, additional points may be required depending on the parameters you set. If addMenuItemInformation is set to true, 1 point will be added per menu item returned. Learn more about quotas."
+}

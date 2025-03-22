@@ -1,0 +1,10 @@
+{
+  "title": "Authentication",
+  "group": "Guides",
+  "description": "To use the API you need an API key. You can get a free one by simply signing up here.",
+  "endpoint_url": "",
+  "endpoint_method": "",
+  "parameters": {},
+  "code_examples": [],
+  "quota": ""
+}

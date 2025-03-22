@@ -1,0 +1,76 @@
+{
+  "title": "Search Restaurants",
+  "group": "Restaurants",
+  "description": "Search through thousands of restaurants (in North America) by location, cuisine, budget, and more.",
+  "endpoint_url": "https://api.spoonacular.com/food/restaurants/search",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "beach cafe",
+      "Description": "The search query."
+    },
+    "lat": {
+      "Name": "lat",
+      "Type": "number",
+      "Example": "37.7786357",
+      "Description": "The latitude of the user's location."
+    },
+    "lng": {
+      "Name": "lng",
+      "Type": "number",
+      "Example": "-122.3918135",
+      "Description": "The longitude of the user's location.\"."
+    },
+    "distance": {
+      "Name": "distance",
+      "Type": "number",
+      "Example": "2",
+      "Description": "The distance around the location in miles."
+    },
+    "budget": {
+      "Name": "budget",
+      "Type": "number",
+      "Example": "20",
+      "Description": "The user's budget for a meal in USD."
+    },
+    "cuisine": {
+      "Name": "cuisine",
+      "Type": "string",
+      "Example": "italian",
+      "Description": "The cuisine of the restaurant."
+    },
+    "min-rating": {
+      "Name": "min-rating",
+      "Type": "number",
+      "Example": "4.4",
+      "Description": "The minimum rating of the restaurant between 0 and 5."
+    },
+    "is-open": {
+      "Name": "is-open",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether the restaurant must be open at the time of search."
+    },
+    "sort": {
+      "Name": "sort",
+      "Type": "string",
+      "Example": "distance",
+      "Description": "How to sort the results, one of the following 'cheapest', 'fastest', 'rating', 'distance' or the default 'relevance'."
+    },
+    "page": {
+      "Name": "page",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The page number of results."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"restaurants\": [\n        {\n            \"_id\": \"a8b49c84-a92d-4f06-802e-467af49feaf0\",\n            \"name\": \"South Beach Cafe\",\n            \"phone_number\": 14159741115,\n            \"address\": {\n                \"street_addr\": \"800 The Embarcadero\",\n                \"city\": \"San Francisco\",\n                \"state\": \"CA\",\n                \"zipcode\": \"94107\",\n                \"country\": \"US\",\n                \"lat\": 37.78129959,\n                \"lon\": -122.38869477,\n                \"street_addr_2\": \"\",\n                \"latitude\": 37.78129959,\n                \"longitude\": -122.38869477\n            },\n            \"type\": \"restaurant\",\n            \"description\": \"Italian, Pizza\",\n            \"local_hours\": {\n                \"operational\": {\n                    \"Monday\": \"07:00AM - 09:00PM\",\n                    \"Tuesday\": \"07:00AM - 09:00PM\",\n                    \"Wednesday\": \"07:00AM - 09:00PM\",\n                    \"Thursday\": \"07:00AM - 09:00PM\",\n                    \"Friday\": \"07:00AM - 09:00PM\",\n                    \"Saturday\": \"08:00AM - 09:00PM\",\n                    \"Sunday\": \"08:00AM - 09:00PM\"\n                },\n                \"delivery\": {\n                    \"Monday\": \"07:00AM - 09:00PM\",\n                    \"Tuesday\": \"07:00AM - 09:00PM\",\n                    \"Wednesday\": \"07:00AM - 09:00PM\",\n                    \"Thursday\": \"07:00AM - 09:00PM\",\n                    \"Friday\": \"07:00AM - 09:00PM\",\n                    \"Saturday\": \"08:00AM - 09:00PM\",\n                    \"Sunday\": \"08:00AM - 09:00PM\"\n                },\n                \"pickup\": {\n                    \"Monday\": \"07:00AM - 09:00PM\",\n                    \"Tuesday\": \"07:00AM - 09:00PM\",\n                    \"Wednesday\": \"07:00AM - 09:00PM\",\n                    \"Thursday\": \"07:00AM - 09:00PM\",\n                    \"Friday\": \"07:00AM - 09:00PM\",\n                    \"Saturday\": \"08:00AM - 09:00PM\",\n                    \"Sunday\": \"08:00AM - 09:00PM\"\n                },\n                \"dine_in\": {\n                    \"Monday\": \"07:00AM - 09:00PM\",\n                    \"Tuesday\": \"07:00AM - 09:00PM\",\n                    \"Wednesday\": \"07:00AM - 09:00PM\",\n                    \"Thursday\": \"07:00AM - 09:00PM\",\n                    \"Friday\": \"07:00AM - 09:00PM\",\n                    \"Saturday\": \"08:00AM - 09:00PM\",\n                    \"Sunday\": \"08:00AM - 09:00PM\"\n                }\n            },\n            \"cuisines\": [\n                \"Breakfast\",\n                \"Dinner\",\n                \"Italian\",\n                \"Lunch\",\n                \"Pickup\",\n                \"Pizza\",\n                \"Salads\",\n                \"Sandwich\",\n                \"Sandwiches\",\n                \"Takeout\"\n            ],\n            \"food_photos\": [\n                \"https://cdn-img.mealme.ai/f3d0e396f1b552927092bafa65ef2cc4e8b57c22/68747470733a2f2f6d656469612d63646e2e677275626875622e636f6d2f696d6167652f75706c6f61642f62657462706b3570747a37756a306279616b6a672e6a7067\"\n            ],\n            \"logo_photos\": [\n                \"https://cdn-img.mealme.ai/25b450d4e72eea47dccd744c326e49e23343bd0d/68747470733a2f2f7265732e636c6f7564696e6172792e636f6d2f677275626875622f696d6167652f75706c6f61642f76313531383830323236382f63686a6a356173716f6766696e726f7671376f732e706e67\"\n            ],\n            \"store_photos\": [],\n            \"dollar_signs\": 2,\n            \"pickup_enabled\": true,\n            \"delivery_enabled\": true,\n            \"is_open\": false,\n            \"offers_first_party_delivery\": false,\n            \"offers_third_party_delivery\": true,\n            \"miles\": 0.2508434381960197,\n            \"weighted_rating_value\": 4.725654450261779,\n            \"aggregated_rating_count\": 191\n        },\n        ...\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 3 points. Learn more about quotas."
+}

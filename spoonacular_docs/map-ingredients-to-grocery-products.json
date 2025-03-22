@@ -1,0 +1,22 @@
+{
+  "title": "Map Ingredients to Grocery Products",
+  "group": "Products",
+  "description": "Map a set of ingredients to products you can buy in the grocery store.",
+  "endpoint_url": "https://api.spoonacular.com/food/ingredients/map",
+  "endpoint_method": "POST",
+  "parameters": {
+    "(post body)": {
+      "Name": "(post body)",
+      "Type": "string",
+      "Example": "{\n                \"ingredients\": [\"eggs\",\"bacon\"],\n                \"servings\": 2\n              }",
+      "Description": "Input for grocery product mapping."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "[\n    {\n        \"original\": \"eggs\",\n        \"originalName\": \"eggs\",\n        \"ingredientImage\": \"egg.png\",\n        \"meta\": [\n            \"egg\"\n        ],\n        \"products\": [\n            {\n                \"id\": 209945,\n                \"title\": \"Crystal Farms Eggs - Fresh Accents Peeled Hard Cooked 2 ct Packs\",\n                \"upc\": \"075925889498\"\n            },\n            {\n                \"id\": 214723,\n                \"title\": \"Organic Valley Eggs - Organic Medium Brown\",\n                \"upc\": \"093966811100\"\n            },\n            {\n                \"id\": 183228,\n                \"title\": \"Eggland's Best Grade A Eggs Jumbo - 12 CT\",\n                \"upc\": \"715141328615\"\n            }\n        ]\n    },\n    {\n        \"ingredientImage\": \"raw-bacon.png\",\n        \"meta\": [\n            \"bacon\"\n        ],\n        \"original\": \"bacon\",\n        \"originalName\": \"bacon\",\n        \"products\": [\n            {\n                \"id\": 159164,\n                \"title\": \"Wright Bacon - Naturally Hickory Smoked\",\n                \"upc\": \"079621461552\"\n            },\n            {\n                \"id\": 87924,\n                \"title\": \"Sugardale Bacon\",\n                \"upc\": \"073890006025\"\n            },\n            {\n                \"id\": 213315,\n                \"title\": \"John Morrell Bacon - Applewood Smoked\",\n                \"upc\": \"070100060877\"\n            },\n            {\n                \"id\": 94585,\n                \"title\": \"Hormel Black Label Bacon Thick Cut\",\n                \"upc\": \"037600153041\"\n            }          \n        ]\n    }\n]"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point per mapped ingredient. Learn more about quotas."
+}

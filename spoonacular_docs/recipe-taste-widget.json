@@ -1,0 +1,40 @@
+{
+  "title": "Recipe Taste Widget",
+  "group": "Widgets",
+  "description": "Visualize a recipe's taste information as HTML including CSS. You can play around with that endpoint!",
+  "endpoint_url": "https://api.spoonacular.com/recipes/visualizeTaste",
+  "endpoint_method": "POST",
+  "parameters": {
+    "ingredientList": {
+      "Name": "ingredientList",
+      "Type": "string",
+      "Example": "1 lemon",
+      "Description": "The ingredient list of the recipe, one ingredient per line."
+    },
+    "normalize": {
+      "Name": "normalize",
+      "Type": "boolean",
+      "Example": "false",
+      "Description": "Normalize to the strongest taste."
+    },
+    "rgb": {
+      "Name": "rgb",
+      "Type": "string",
+      "Example": "75,192,192",
+      "Description": "Red, green, blue values for the chart color."
+    },
+    "language": {
+      "Name": "language",
+      "Type": "string",
+      "Example": "en",
+      "Description": "The input language, either \"en\" or \"de\"."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "/* HTML response */"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

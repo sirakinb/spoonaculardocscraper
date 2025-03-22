@@ -1,0 +1,28 @@
+{
+  "title": "Product Nutrition by ID Widget",
+  "group": "Widgets",
+  "description": "Visualize a product's nutritional information as HTML including CSS.",
+  "endpoint_url": "https://api.spoonacular.com/food/products/{id}/nutritionWidget",
+  "endpoint_method": "GET",
+  "parameters": {
+    "id": {
+      "Name": "id",
+      "Type": "number",
+      "Example": "7657",
+      "Description": "The id of the product."
+    },
+    "defaultCss": {
+      "Name": "defaultCss",
+      "Type": "boolean",
+      "Example": "true",
+      "Description": "Whether the default CSS should be added to the response."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "/* HTML response */"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

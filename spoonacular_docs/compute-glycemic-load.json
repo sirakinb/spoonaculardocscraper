@@ -1,0 +1,32 @@
+{
+  "title": "Compute Glycemic Load",
+  "group": "Ingredients",
+  "description": "Retrieve the glycemic index for a list of ingredients and compute the individual and total glycemic load.",
+  "endpoint_url": "https://api.spoonacular.com/food/ingredients/glycemicLoad",
+  "endpoint_method": "POST",
+  "parameters": {
+    "(post body)": {
+      "Name": "(post body)",
+      "Type": "string",
+      "Example": "{\n                \"ingredients\":[\n                    \"1 kiwi\",\n                    \"2 cups rice\",\n                    \"2 glasses of water\"\n                ]\n            }",
+      "Description": "A json body."
+    },
+    "language": {
+      "Name": "language",
+      "Type": "string",
+      "Example": "en",
+      "Description": "The input language, either \"en\" or \"de\"."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"ingredients\":[\n        \"1 kiwi\",\n        \"2 cups rice\",\n        \"2 glasses of water\"\n    ]\n}"
+    },
+    {
+      "language": "json",
+      "code": "{\n    \"totalGlycemicLoad\": 183.64,\n    \"ingredients\": [\n        {\n            \"id\": 9148,\n            \"original\": \"1 kiwi\",\n            \"glycemicIndex\": 52.67,\n            \"glycemicLoad\": 5.59\n        },\n        {\n            \"id\": 20444,\n            \"original\": \"2 cups rice\",\n            \"glycemicIndex\": 61.19,\n            \"glycemicLoad\": 178.05\n        },\n        {\n            \"id\": 14412,\n            \"original\": \"2 glasses of water\",\n            \"glycemicIndex\": 0.0,\n            \"glycemicLoad\": 0.0\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point and 0.1 points  per ingredient. \n    Learn more about quotas."
+}

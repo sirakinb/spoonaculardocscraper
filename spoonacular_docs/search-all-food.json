@@ -1,0 +1,34 @@
+{
+  "title": "Search All Food",
+  "group": "Misc",
+  "description": "Search all food content with one call. That includes recipes, grocery products, menu items, simple foods (ingredients), and food videos.",
+  "endpoint_url": "https://api.spoonacular.com/food/search",
+  "endpoint_method": "GET",
+  "parameters": {
+    "query": {
+      "Name": "query",
+      "Type": "string",
+      "Example": "apple",
+      "Description": "The search query."
+    },
+    "offset": {
+      "Name": "offset",
+      "Type": "number",
+      "Example": "0",
+      "Description": "The number of results to skip (between 0 and 990)."
+    },
+    "number": {
+      "Name": "number",
+      "Type": "number",
+      "Example": "10",
+      "Description": "The number of expected results (between 1 and 100)."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n  \"query\": \"apple\",\n  \"totalResults\": 5826,\n  \"limit\": 2,\n  \"offset\": 0,\n  \"searchResults\": [\n    {\n      \"name\": \"Recipes\",\n      \"totalResults\": 167,\n      \"results\": [\n        {\n    \t  \"id\": 632485,\n          \"name\": \"Apple Cake\",\n          \"image\": \"https://img.spoonacular.com/recipes/632485-312x231.jpg\",\n          \"link\": \"https://spoonacular.com/recipes/apple-cake-632485\",\n          \"type\": \"HTML\",\n          \"relevance\": 10000,\n          \"content\": \"Apple Cake might be just the dessert you are searching for...\"\n        },\n        {\n    \t  \"id\": 632522,\n          \"name\": \"Apple Crumble\",\n          \"image\": \"https://img.spoonacular.com/recipes/632522-312x231.jpg\",\n          \"link\": \"https://spoonacular.com/recipes/apple-crumble-632522\",\n          \"type\": \"HTML\",\n          \"relevance\": 9999,\n          \"content\": \"Apple Crumble might be just the dessert you are searching for...\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Products\",\n      \"totalResults\": 3219,\n      \"results\": [\n        {\n          \"id\": 428571,\n          \"name\": \"Pleasant Valley Apple Wine\",\n          \"image\": \"https://img.spoonacular.com/products/469604-312x231.jpg\",\n          \"link\": \"https://spoonacular.com/products/pleasant-valley-apple-wine-469604\",\n          \"type\": \"HTML\",\n          \"relevance\": 10000\n        },\n        {\n          \"id\": 428573,\n          \"name\": \"NV Georgetown Vineyards Apple Wine\",\n          \"image\": \"https://img.spoonacular.com/products/428573-312x231.jpg\",\n          \"link\": \"https://spoonacular.com/products/nv-georgetown-vineyards-apple-wine-428573\",\n          \"type\": \"HTML\",\n          \"relevance\": 9999\n        }\n      ]\n    },\n    {\n      \"name\": \"Menu Items\",\n      \"totalResults\": 2410,\n      \"results\": [\n        {\n    \t  \"id\": 334550,\n          \"name\": \"Old Chicago Applewood Spiced BBQ Chicken Pizza, Chicago Thick, 12 Inch (Slice)\",\n          \"image\": null,\n          \"link\": \"https://spoonacular.com/menu-items/old-chicago-applewood-spiced-bbq-chicken-pizza-chicago-thick-12-inch--334550\",\n          \"type\": \"HTML\",\n          \"relevance\": 10000\n        },\n        {\n    \t  \"id\": 422013,\n          \"name\": \"Huddle House Apple Cobbler a la mode\",\n          \"image\": null,\n          \"link\": \"https://spoonacular.com/menu-items/huddle-house-apple-cobbler-a-la-mode-422013\",\n          \"type\": \"HTML\",\n          \"relevance\": 9999\n        }\n      ]\n    },\n    {\n      \"name\": \"Articles\",\n      \"totalResults\": 28,\n      \"results\": [\n        {\n          \"name\": \"Apples\",\n          \"image\": \"https://img.spoonacular.com/ingredients_100x100/braeburn-apples.jpg\",\n          \"link\": \"https://spoonacular.com/academy/apples\",\n          \"type\": \"HTML\",\n          \"relevance\": 90.46\n        },\n        {\n          \"name\": \"Vinegar\",\n          \"image\": \"https://img.spoonacular.com/ingredients_100x100/red-wine-vinegar.jpg\",\n          \"link\": \"https://spoonacular.com/academy/vinegar\",\n          \"type\": \"HTML\",\n          \"relevance\": 23.80\n        }\n      ]\n    },\n    {\n      \"name\": \"Videos\",\n      \"totalResults\": 2,\n      \"results\": [\n        {\n    \t  \"id\": \"G0HENy59YkE\",\n          \"name\": \"Pineapple Bundt Cake\",\n          \"image\": \"https://i.ytimg.com/vi/G0HENy59YkE/hqdefault.jpg\",\n          \"link\": \"https://www.youtube.com/watch?v=G0HENy59YkE\",\n          \"type\": \"YOUTUBE_VIDEO\",\n          \"relevance\": 10000,\n          \"content\": \"FULL RECIPE HERE: https://tatyanaseverydayfood.com/recipe-items/pineapple-bundt-cake/...\"\n        },\n        {\n    \t  \"id\": \"xEENgO5Z5To\",\n          \"name\": \"Pineapple Shrimp Tacos\",\n          \"image\": \"https://i.ytimg.com/vi/xEENgO5Z5To/mqdefault.jpg\",\n          \"link\": null,\n          \"type\": \"YOUTUBE_VIDEO\",\n          \"relevance\": 9999,\n          \"content\": \"RECIPE: Below in description.\\nThese Pineapple Shrimp Tacos cook in 5 minutes and assembly is a breeze...\"\n        }\n      ]\n    },\n    {\n      \"name\": \"Simple Foods\",\n      \"totalResults\": 2,\n      \"results\": [\n        {\n          \"id\": 78541,\n          \"name\": \"apple\",\n          \"image\": \"apple.jpg\",\n          \"type\": \"HTML\",\n          \"relevance\": 10000\n        },\n        {\n    \t  \"id\": 8782,\n          \"name\": \"applesauce\",\n          \"image\": \"applesauce.png\",\n          \"type\": \"HTML\",\n          \"relevance\": 9999\n        }\n      ]\n    }\n  ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 3 points and 0.01 points  per result returned. \n    Learn more about quotas."
+}

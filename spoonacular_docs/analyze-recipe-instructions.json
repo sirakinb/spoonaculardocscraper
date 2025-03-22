@@ -1,0 +1,22 @@
+{
+  "title": "Analyze Recipe Instructions",
+  "group": "Recipes",
+  "description": "This endpoint allows you to break down instructions into atomic steps. Furthermore, each step will contain the ingredients and equipment required. Additionally, all ingredients and equipment from the recipe's instructions will be extracted independently of the step they're used in.",
+  "endpoint_url": "https://api.spoonacular.com/recipes/analyzeInstructions",
+  "endpoint_method": "POST",
+  "parameters": {
+    "instructions": {
+      "Name": "instructions",
+      "Type": "string",
+      "Example": "Put the garlic in a pan and then add the onion. Add some salt and oregano.",
+      "Description": "The instructions to be analyzed."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"parsedInstructions\": [\n        {\n            \"name\": \"\",\n            \"steps\": [\n                {\n                    \"number\": 1,\n                    \"step\": \"Put the garlic in a pan and then add the onion.\",\n                    \"ingredients\": [\n                        {\n                            \"id\": 11215,\n                            \"name\": \"garlic\",\n                            \"localizedName\": \"garlic\",\n                            \"image\": \"garlic.png\"\n                        },\n                        {\n                            \"id\": 11282,\n                            \"name\": \"onion\",\n                            \"localizedName\": \"onion\",\n                            \"image\": \"brown-onion.png\"\n                        }\n                    ],\n                    \"equipment\": [\n                        {\n                            \"id\": 404645,\n                            \"name\": \"frying pan\",\n                            \"localizedName\": \"frying pan\",\n                            \"image\": \"pan.png\"\n                        }\n                    ]\n                },\n                {\n                    \"number\": 2,\n                    \"step\": \"Add some salt and oregano.\",\n                    \"ingredients\": [\n                        {\n                            \"id\": 2027,\n                            \"name\": \"oregano\",\n                            \"localizedName\": \"oregano\",\n                            \"image\": \"oregano.jpg\"\n                        },\n                        {\n                            \"id\": 2047,\n                            \"name\": \"salt\",\n                            \"localizedName\": \"salt\",\n                            \"image\": \"salt.jpg\"\n                        }\n                    ],\n                    \"equipment\": []\n                }\n            ]\n        }\n    ],\n    \"ingredients\": [\n        {\n            \"id\": 2027,\n            \"name\": \"oregano\"\n        },\n        {\n            \"id\": 11215,\n            \"name\": \"garlic\"\n        },\n        {\n            \"id\": 11282,\n            \"name\": \"onion\"\n        },\n        {\n            \"id\": 2047,\n            \"name\": \"salt\"\n        }\n    ],\n    \"equipment\": [\n        {\n            \"id\": 404645,\n            \"name\": \"frying pan\"\n        }\n    ]\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 1 point. Learn more about quotas."
+}

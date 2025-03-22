@@ -1,0 +1,22 @@
+{
+  "title": "Image Classification by URL",
+  "group": "Misc",
+  "description": "Classify a food image. You can play around with that endpoint!",
+  "endpoint_url": "https://api.spoonacular.com/food/images/classify",
+  "endpoint_method": "GET",
+  "parameters": {
+    "imageUrl": {
+      "Name": "imageUrl",
+      "Type": "string",
+      "Example": "https://img.spoonacular.com/recipes/635350-240x150.jpg",
+      "Description": "The URL of the image to be classified."
+    }
+  },
+  "code_examples": [
+    {
+      "language": "json",
+      "code": "{\n    \"category\": \"burger\",\n    \"probability\": 0.91354\n}"
+    }
+  ],
+  "quota": "Calling this endpoint requires 2 points. Learn more about quotas."
+}
